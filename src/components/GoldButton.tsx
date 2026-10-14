@@ -32,7 +32,7 @@ export const GoldButton: React.FC<GoldButtonProps> = ({
 
   const variantClasses = {
     primary:
-      'bg-gradient-to-r from-[#D4A64A] via-[#FFF0A6] to-[#D4A64A] text-[#000000] font-semibold border border-[#FFF0A6]/60 shadow-[0_4px_20px_rgba(214,180,92,0.25)] hover:shadow-[0_6px_28px_rgba(214,180,92,0.45)] hover:border-[#FFF0A6]',
+      'bg-[#D4A64A] text-[#000000] font-semibold border border-[#D4A64A] shadow-[0_4px_20px_rgba(214,180,92,0.25)] hover:bg-[#FFF0A6] hover:border-[#FFF0A6] hover:shadow-[0_6px_28px_rgba(214,180,92,0.45)]',
     outline:
       'bg-transparent text-[#D4A64A] font-medium border border-[#D4A64A]/70 hover:bg-[#D4A64A] hover:text-[#000000] hover:border-[#FFF0A6]',
     charcoal:
