@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@300;400;500;600&display=swap');
 @import 'tailwindcss';
 
 :root {
-  --baan-black: #050505;
-  --baan-soft-black: #0c0b0a;
-  --baan-charcoal: #181614;
-  --baan-gold: #bfa078;
-  --baan-gold-highlight: #d6b45c;
-  --baan-gold-dark: #977344;
-  --baan-ivory: #f6f0e7;
-  --baan-white: #ffffff;
-  --baan-border: #352b20;
-  --baan-light-border: #e8e0d6;
+  --baan-black: #000000;
+  --baan-metallic-gold: #D4A64A;
+  --baan-champagne-gold: #FFF0A6;
+  --baan-antique-gold: #8C5A1E;
+  --baan-soft-black: #0A0A0A;
+  --baan-charcoal: #111111;
+  --baan-gold: var(--baan-metallic-gold);
+  --baan-gold-highlight: var(--baan-champagne-gold);
+  --baan-gold-dark: var(--baan-antique-gold);
+  --baan-white: #FFFFFF;
+  --baan-warm-white: #F7F3EC;
+  --baan-ivory: var(--baan-warm-white);
+  --baan-muted-text-dark: #D5CEC2;
+  --baan-border: #2C2114;
+  --baan-light-border: #E7DED0;
   --color-white: var(--baan-white);
   --color-black: var(--baan-black);
   --color-charcoal: var(--baan-charcoal);
@@ -34,10 +39,11 @@ body {
   overflow-x: hidden;
   background: var(--baan-black);
   color: var(--baan-ivory);
-  font-family: Manrope, system-ui, sans-serif;
+  font-family: 'Montserrat', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-h1, h2, h3, h4, .font-serif-luxury { font-family: 'Cormorant Garamond', Georgia, serif; }
+h1, h2, h3, h4, .font-serif-luxury { font-family: 'Cinzel', Georgia, serif; font-weight: 500; }
+button, .btn-bali, .header-booking-cta { font-family: 'Montserrat', system-ui, sans-serif; font-weight: 600; }
 button, input, select, textarea { font: inherit; }
 button { cursor: pointer; }
 
@@ -132,7 +138,7 @@ button { cursor: pointer; }
 .catalogue-dialog h3, .catalogue-dialog h4 { color: var(--baan-gold) !important; }
 .catalogue-dialog p, .catalogue-dialog span { color: var(--baan-ivory); }
 .catalogue-dialog [class*="text-[#"] { color: var(--baan-ivory) !important; }
-.catalogue-dialog [class*="text-[#BFA078]"], .catalogue-dialog [class*="text-[#D4A95B]"] { color: var(--baan-gold) !important; }
+.catalogue-dialog [class*="text-[#D4A64A]"], .catalogue-dialog [class*="text-[#D4A95B]"] { color: var(--baan-gold) !important; }
 .catalogue-dialog h3[class*="text-"], .catalogue-dialog h4[class*="text-"] { color: var(--baan-gold) !important; }
 .catalogue-dialog > div:first-child { border-color: rgba(191,160,120,.24) !important; }
 .catalogue-scroll > div > div { background: var(--baan-soft-black) !important; border-color: rgba(191,160,120,.22) !important; color: var(--baan-ivory); }
@@ -319,13 +325,13 @@ body.menu-open { overflow: hidden; }
   justify-content: center;
   gap: .6rem;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 18%, rgba(191,160,120,.2), transparent 48%), linear-gradient(145deg, #181614, #050505);
+  background: radial-gradient(ellipse at 50% 18%, rgba(191,160,120,.2), transparent 48%), linear-gradient(145deg, #111111, #000000);
   color: var(--baan-ivory);
   text-align: center;
 }
 .image-fallback-brand {
   color: var(--baan-gold) !important;
-  font: 500 clamp(2rem, 6vw, 4rem)/1 'Cormorant Garamond', Georgia, serif;
+  font: 500 clamp(2rem, 6vw, 4rem)/1 'Cinzel', Georgia, serif;
   letter-spacing: .18em;
 }
 .image-fallback-caption {
@@ -360,7 +366,7 @@ body.menu-open { overflow: hidden; }
 .page-about section a, .page-services section a, .page-service-detail section a, .page-membership section a, .page-franchise section a, .page-virtual-tour section a, .page-contact section a { color: var(--baan-gold); }
 .page-about section [class*="text-[#"], .page-services section [class*="text-[#"], .page-service-detail section [class*="text-[#"], .page-membership section [class*="text-[#"], .page-franchise section [class*="text-[#"], .page-virtual-tour section [class*="text-[#"], .page-contact section [class*="text-[#"] { color: var(--baan-ivory) !important; }
 .page-about section [class*="text-[#D4A95B]"], .page-services section [class*="text-[#D4A95B]"], .page-service-detail section [class*="text-[#D4A95B]"], .page-membership section [class*="text-[#D4A95B]"], .page-franchise section [class*="text-[#D4A95B]"], .page-virtual-tour section [class*="text-[#D4A95B]"], .page-contact section [class*="text-[#D4A95B]"],
-.page-about section [class*="text-[#BFA078]"], .page-services section [class*="text-[#BFA078]"], .page-service-detail section [class*="text-[#BFA078]"], .page-membership section [class*="text-[#BFA078]"], .page-franchise section [class*="text-[#BFA078]"], .page-virtual-tour section [class*="text-[#BFA078]"], .page-contact section [class*="text-[#BFA078]"] { color: var(--baan-gold) !important; }
+.page-about section [class*="text-[#D4A64A]"], .page-services section [class*="text-[#D4A64A]"], .page-service-detail section [class*="text-[#D4A64A]"], .page-membership section [class*="text-[#D4A64A]"], .page-franchise section [class*="text-[#D4A64A]"], .page-virtual-tour section [class*="text-[#D4A64A]"], .page-contact section [class*="text-[#D4A64A]"] { color: var(--baan-gold) !important; }
 .page-about section h1[class*="text-"], .page-about section h2[class*="text-"], .page-about section h3[class*="text-"], .page-services section h1[class*="text-"], .page-services section h2[class*="text-"], .page-services section h3[class*="text-"], .page-service-detail section h1[class*="text-"], .page-service-detail section h2[class*="text-"], .page-service-detail section h3[class*="text-"], .page-membership section h1[class*="text-"], .page-membership section h2[class*="text-"], .page-membership section h3[class*="text-"], .page-franchise section h1[class*="text-"], .page-franchise section h2[class*="text-"], .page-franchise section h3[class*="text-"], .page-virtual-tour section h1[class*="text-"], .page-virtual-tour section h2[class*="text-"], .page-virtual-tour section h3[class*="text-"], .page-contact section h1[class*="text-"], .page-contact section h2[class*="text-"], .page-contact section h3[class*="text-"] { color: var(--baan-gold) !important; }
 .page-about section [class*="rounded-"], .page-services section [class*="rounded-"], .page-service-detail section [class*="rounded-"], .page-membership section [class*="rounded-"], .page-franchise section [class*="rounded-"], .page-virtual-tour section [class*="rounded-"], .page-contact section [class*="rounded-"] {
   border-color: rgba(191,160,120,.3);
@@ -416,7 +422,7 @@ body.menu-open { overflow: hidden; }
 .page-services .services-grid-section .service-card a { color: var(--baan-gold-dark) !important; }
 .page-services .services-grid-section .service-card button { color: var(--baan-black) !important; }
 .page-services .services-grid-section .service-card button:hover { color: var(--baan-gold-dark) !important; }
-.page-services .services-grid-section .service-card .bg-\[\#BFA078\] { color: var(--baan-black) !important; }
+.page-services .services-grid-section .service-card .bg-\[\#D4A64A\] { color: var(--baan-black) !important; }
 .page-membership .bg-gold-gradient { background: linear-gradient(145deg, #29241e, #171410) !important; color: var(--baan-ivory) !important; }
 .page-contact section [class*="bg-[#D4A265]"] { background: var(--baan-charcoal) !important; color: var(--baan-ivory) !important; border: 1px solid rgba(191,160,120,.3); }
 .page-contact section [class*="bg-[#D4A265]"] [class*="bg-white"] { background: rgba(191,160,120,.12) !important; }
@@ -505,7 +511,7 @@ body.menu-open { overflow: hidden; }
   padding: 14px 18px;
   color: var(--baan-ivory);
 }
-.tour-lightbox-toolbar h2 { margin: 0; color: var(--baan-gold); font: 500 20px/1.2 'Cormorant Garamond', Georgia, serif; }
+.tour-lightbox-toolbar h2 { margin: 0; color: var(--baan-gold); font: 500 20px/1.2 'Cinzel', Georgia, serif; }
 .tour-lightbox-toolbar p { margin: 3px 0 0; color: #c2b8ab; font-size: 11px; }
 .tour-lightbox-media {
   position: relative;
@@ -697,7 +703,7 @@ button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
 .input-bali:focus, input:focus, select:focus, textarea:focus { outline: 2px solid rgba(191,160,120,.35); outline-offset: 1px; border-color: var(--baan-gold) !important; }
 .service-card-fallback { width: 100%; height: 100%; min-height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 20px; text-align: center; background: linear-gradient(145deg, var(--baan-charcoal), var(--baan-black)); color: var(--baan-ivory); }
 .service-card-fallback svg, .service-card-fallback span, .service-card-fallback small { color: var(--baan-gold); }
-.service-card-fallback strong { max-width: 190px; color: var(--baan-ivory); font: 500 21px/1.05 'Cormorant Garamond', Georgia, serif; }
+.service-card-fallback strong { max-width: 190px; color: var(--baan-ivory); font: 500 21px/1.05 'Cinzel', Georgia, serif; }
 
 @media (max-width: 1023px) {
   .site-header .nav-shell { min-height: 78px; }

@@ -89,7 +89,7 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
   return (
     <div className="page-virtual-tour w-full">
       {/* 1. Virtual tour hero */}
-      <section className="relative w-full bg-[#050505] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#352B20] overflow-hidden">
+      <section className="relative w-full bg-[#000000] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#2C2114] overflow-hidden">
         <Hero3DCanvas className="opacity-80" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -97,15 +97,15 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
             {/* Left Copy */}
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2">
-                <span className="w-6 h-[1px] bg-[#D6B45C]" />
-                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#D6B45C] uppercase">
+                <span className="w-6 h-[1px] bg-[#FFF0A6]" />
+                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#FFF0A6] uppercase">
                   IMMERSIVE PREMISES TOUR
                 </span>
               </div>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#BFA078] font-bold uppercase tracking-tight">
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#D4A64A] font-bold uppercase tracking-tight">
                 Virtual Tour
               </h1>
-              <p className="text-base text-[#F6F0E7]/85 max-w-sm leading-relaxed">
+              <p className="text-base text-[#F7F3EC]/85 max-w-sm leading-relaxed">
                 Step inside BAAN’s serene architectural spaces, treatment suites, and private relaxation terraces.
               </p>
               <div className="pt-2">
@@ -129,7 +129,7 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
               <TiltCard
                 maxTilt={6}
                 scale={1.015}
-                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#BFA078]/40 bg-[#181614]"
+                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#D4A64A]/40 bg-[#111111]"
               >
                 <ImageWithFallback
                   src={IMAGES.virtualTourHero}
@@ -145,7 +145,7 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 2. BRANCH SWITCHER TABS */}
-      <section className="w-full bg-[#181614] pt-12 pb-6 border-b border-[#352B20]">
+      <section className="w-full bg-[#111111] pt-12 pb-6 border-b border-[#2C2114]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-3">
             {LOCATION_BRANCHES.map((b) => {
@@ -156,8 +156,8 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
                   onClick={() => setSelectedBranch(b.id)}
                   className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                     isSelected
-                      ? 'bg-gradient-to-r from-[#BFA078] to-[#D6B45C] text-[#050505] shadow-sm'
-                      : 'bg-[#0C0B0A] text-[#F6F0E7] hover:bg-[#352B20] border border-[#352B20]'
+                      ? 'bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] text-[#000000] shadow-sm'
+                      : 'bg-[#0A0A0A] text-[#F7F3EC] hover:bg-[#2C2114] border border-[#2C2114]'
                   }`}
                 >
                   {b.name.replace(' Studio', '').replace(' Retreat', '').replace(' Flagship', '').replace(' Financial District', '')}
@@ -165,17 +165,17 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
               );
             })}
           </div>
-          <p className="text-center text-xs text-[#F6F0E7]/70 mt-4">
-            Selected Location: <strong className="text-[#D6B45C]">{currentBranch.name}</strong> · {currentBranch.address}
+          <p className="text-center text-xs text-[#F7F3EC]/70 mt-4">
+            Selected Location: <strong className="text-[#FFF0A6]">{currentBranch.name}</strong> · {currentBranch.address}
           </p>
         </div>
       </section>
 
       {/* 3. INTERACTIVE TOUR VIEWER CONTAINER with 3D Tilt */}
-      <section className="w-full bg-[#0C0B0A] py-10 lg:py-16">
+      <section className="w-full bg-[#0A0A0A] py-10 lg:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div ref={viewerRef} className="relative rounded-[32px] overflow-hidden shadow-2xl aspect-[16/9] bg-[#111] border border-[#352B20]">
+          <div ref={viewerRef} className="relative rounded-[32px] overflow-hidden shadow-2xl aspect-[16/9] bg-[#111] border border-[#2C2114]">
             <ImageWithFallback
               key={activeSpace.image}
               src={activeSpace.image}
@@ -187,11 +187,11 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
 
             {/* Viewer HUD Overlay */}
             <div className="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/70 backdrop-blur-md text-white text-xs px-3.5 py-1.5 rounded-full border border-white/10">
-              <Compass size={14} className="text-[#D6B45C] animate-spin" />
+              <Compass size={14} className="text-[#FFF0A6] animate-spin" />
               <span>Perspective: {activeSpace.title}</span>
             </div>
 
-            <div className="absolute top-4 right-4 z-20 bg-black/70 backdrop-blur-md text-[#D6B45C] text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider border border-[#D6B45C]/30">
+            <div className="absolute top-4 right-4 z-20 bg-black/70 backdrop-blur-md text-[#FFF0A6] text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider border border-[#FFF0A6]/30">
               {currentBranch.name} · Interactive View
             </div>
 
@@ -205,7 +205,7 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
                     aria-pressed={activeSpaceIdx === idx}
                     className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
                       activeSpaceIdx === idx
-                        ? 'bg-gradient-to-r from-[#BFA078] to-[#D6B45C] text-[#050505] font-semibold'
+                        ? 'bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] text-[#000000] font-semibold'
                         : 'bg-white/15 text-white hover:bg-white/25'
                     }`}
                   >
@@ -215,24 +215,24 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
               </div>
               <button
                 onClick={onOpenBooking}
-                className="text-xs bg-[#BFA078] text-[#050505] font-semibold px-4 py-1.5 rounded-xl hover:bg-[#D6B45C] transition-colors cursor-pointer"
+                className="text-xs bg-[#D4A64A] text-[#000000] font-semibold px-4 py-1.5 rounded-xl hover:bg-[#FFF0A6] transition-colors cursor-pointer"
               >
                 Book This Suite →
               </button>
             </div>
           </div>
 
-          <p className="text-center text-xs text-[#F6F0E7]/60 mt-4">
+          <p className="text-center text-xs text-[#F7F3EC]/60 mt-4">
             ℹ️ Demonstration Tour View · Photographs reflect curated architectural and interior aesthetics of the BAAN portfolio.
           </p>
         </div>
       </section>
 
       {/* 4. GALLERY THUMBNAILS GRID (With 3D Tilt on each Card) */}
-      <section className="tour-gallery w-full bg-[#F6F0E7] py-16 border-t border-[#E8E0D6]">
+      <section className="tour-gallery w-full bg-[#F7F3EC] py-16 border-t border-[#E7DED0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#050505]">
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#000000]">
               BAAN Chambers &amp; Spaces
             </h3>
             <GoldDivider />
@@ -250,11 +250,11 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
                 glare={true}
                 className={`tour-gallery-card group rounded-2xl overflow-hidden border bg-white shadow-xs hover:shadow-md transition-all ${
                   activeSpaceIdx === idx
-                    ? 'border-[#BFA078] ring-2 ring-[#BFA078]/40'
-                    : 'border-[#E8E0D6]'
+                    ? 'border-[#D4A64A] ring-2 ring-[#D4A64A]/40'
+                    : 'border-[#E7DED0]'
                 }`}
               >
-                <div className="tour-gallery-image aspect-[16/10] overflow-hidden bg-[#181614] relative">
+                <div className="tour-gallery-image aspect-[16/10] overflow-hidden bg-[#111111] relative">
                   <ImageWithFallback
                     src={sp.image}
                     alt={sp.title}
@@ -278,10 +278,10 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
                 </div>
                 <div className="p-4 bg-white flex items-center justify-between gap-3">
                   <div>
-                    <h4 className="font-serif font-bold text-sm text-[#181614]">
+                    <h4 className="font-serif font-bold text-sm text-[#111111]">
                       {sp.title}
                     </h4>
-                    <span className="text-[11px] text-[#977344] uppercase tracking-wider">
+                    <span className="text-[11px] text-[#8C5A1E] uppercase tracking-wider">
                       {sp.category}
                     </span>
                   </div>
@@ -358,14 +358,14 @@ export const VirtualTour: React.FC<VirtualTourProps> = ({ onOpenBooking }) => {
               </button>
             </div>
 
-            <div className="p-4 bg-[#181614] border-t border-[#352B20] flex items-center justify-between text-xs text-[#F6F0E7]/70">
+            <div className="p-4 bg-[#111111] border-t border-[#2C2114] flex items-center justify-between text-xs text-[#F7F3EC]/70">
               <span>{activeSpaceIdx + 1} of {IMAGES.spaces.length} photos</span>
               <button
                 onClick={() => {
                   closeLightbox();
                   onOpenBooking();
                 }}
-                className="text-[#D6B45C] hover:underline font-semibold"
+                className="text-[#FFF0A6] hover:underline font-semibold"
               >
                 Book This Suite →
               </button>

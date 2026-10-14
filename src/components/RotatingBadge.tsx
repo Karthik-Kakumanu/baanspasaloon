@@ -27,7 +27,7 @@ export const RotatingBadge: React.FC<RotatingBadgeProps> = ({
           d="M 100, 100 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0"
           fill="none"
         />
-        <text className="text-[10px] tracking-[0.24em] uppercase fill-[#BFA078] font-medium">
+        <text className="text-[10px] tracking-[0.24em] uppercase fill-[#D4A64A] font-medium">
           <textPath href="#circlePath" startOffset="0%">
             {text}
           </textPath>

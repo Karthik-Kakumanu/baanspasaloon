@@ -108,7 +108,7 @@ export const TiltCard: React.FC<TiltCardProps> = ({
       )}
       {/* Subtle luxury ambient gold border highlight on hover */}
       <div
-        className={`pointer-events-none absolute inset-0 z-10 rounded-[inherit] border border-[#D6B45C]/40 transition-opacity duration-300 ${
+        className={`pointer-events-none absolute inset-0 z-10 rounded-[inherit] border border-[#FFF0A6]/40 transition-opacity duration-300 ${
           isHovered ? 'opacity-100' : 'opacity-0'
         }`}
         aria-hidden="true"

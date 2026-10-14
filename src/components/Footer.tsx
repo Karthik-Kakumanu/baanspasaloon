@@ -57,7 +57,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
   };
 
   return (
-    <footer id="bykFooter" className="w-full bg-[#050505] text-[#F6F0E7]">
+    <footer id="bykFooter" className="w-full bg-[#000000] text-[#F7F3EC]">
       {/* Main Footer Body */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
@@ -71,24 +71,24 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 className="h-16 w-auto object-contain"
               />
             </Link>
-            <p className="text-xs uppercase tracking-widest text-[#BFA078] font-semibold">
+            <p className="text-xs uppercase tracking-widest text-[#D4A64A] font-semibold">
               A unit of BAAN Wellness & Aesthetics
             </p>
-            <p className="text-sm text-[#F6F0E7]/80 leading-relaxed max-w-sm">
+            <p className="text-sm text-[#F7F3EC]/80 leading-relaxed max-w-sm">
               Step into a calm BAAN setting for considered beauty, couture hair and restorative spa treatments. Designed around quiet luxury and thoughtful personal care.
             </p>
             
-            <div className="space-y-2 text-xs text-[#F6F0E7]/75 pt-2">
+            <div className="space-y-2 text-xs text-[#F7F3EC]/75 pt-2">
               <div className="flex items-center gap-2">
-                <Phone size={14} className="text-[#BFA078]" />
+                <Phone size={14} className="text-[#D4A64A]" />
                 <span>{BUSINESS_SETTINGS.phone}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail size={14} className="text-[#BFA078]" />
+                <Mail size={14} className="text-[#D4A64A]" />
                 <span>{BUSINESS_SETTINGS.email}</span>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin size={14} className="text-[#BFA078] mt-0.5 flex-shrink-0" />
+                <MapPin size={14} className="text-[#D4A64A] mt-0.5 flex-shrink-0" />
                 <span>{BUSINESS_SETTINGS.address}</span>
               </div>
             </div>
@@ -96,7 +96,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             <div className="flex items-center gap-3 pt-3">
               <a
                 href="#instagram"
-                className="w-9 h-9 rounded-full bg-[#181614] hover:bg-[#BFA078] hover:text-[#050505] text-[#F6F0E7] transition-colors flex items-center justify-center shadow-xs"
+                className="w-9 h-9 rounded-full bg-[#111111] hover:bg-[#D4A64A] hover:text-[#000000] text-[#F7F3EC] transition-colors flex items-center justify-center shadow-xs"
                 aria-label="Instagram"
               >
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -107,7 +107,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               </a>
               <a
                 href="#facebook"
-                className="w-9 h-9 rounded-full bg-[#181614] hover:bg-[#BFA078] hover:text-[#050505] text-[#F6F0E7] transition-colors flex items-center justify-center shadow-xs"
+                className="w-9 h-9 rounded-full bg-[#111111] hover:bg-[#D4A64A] hover:text-[#000000] text-[#F7F3EC] transition-colors flex items-center justify-center shadow-xs"
                 aria-label="Facebook"
               >
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -116,7 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               </a>
               <a
                 href="#youtube"
-                className="w-9 h-9 rounded-full bg-[#181614] hover:bg-[#BFA078] hover:text-[#050505] text-[#F6F0E7] transition-colors flex items-center justify-center shadow-xs"
+                className="w-9 h-9 rounded-full bg-[#111111] hover:bg-[#D4A64A] hover:text-[#000000] text-[#F7F3EC] transition-colors flex items-center justify-center shadow-xs"
                 aria-label="Youtube"
               >
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -129,43 +129,43 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
 
           {/* Quick Links */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-serif text-xl font-bold text-[#BFA078] tracking-wide">
+            <h4 className="font-serif text-xl font-bold text-[#D4A64A] tracking-wide">
               Quick Links
             </h4>
-            <div className="h-0.5 w-10 bg-[#BFA078]/40 mb-4" />
+            <div className="h-0.5 w-10 bg-[#D4A64A]/40 mb-4" />
             <ul className="space-y-2.5 text-sm font-normal">
               <li>
-                <Link to="/about" className="hover:text-[#D6B45C] hover:underline transition-colors">
+                <Link to="/about" className="hover:text-[#FFF0A6] hover:underline transition-colors">
                   About BAAN
                 </Link>
               </li>
               <li>
-                <Link to="/service" className="hover:text-[#D6B45C] hover:underline transition-colors">
+                <Link to="/service" className="hover:text-[#FFF0A6] hover:underline transition-colors">
                   Treatment Services
                 </Link>
               </li>
               <li>
-                <Link to="/membership" className="hover:text-[#D6B45C] hover:underline transition-colors">
+                <Link to="/membership" className="hover:text-[#FFF0A6] hover:underline transition-colors">
                   BAAN Memberships
                 </Link>
               </li>
               <li>
-                <Link to="/franchise" className="hover:text-[#D6B45C] hover:underline transition-colors">
+                <Link to="/franchise" className="hover:text-[#FFF0A6] hover:underline transition-colors">
                   Franchise Partnerships
                 </Link>
               </li>
               <li>
-                <Link to="/virtual-tour" className="hover:text-[#D6B45C] hover:underline transition-colors">
+                <Link to="/virtual-tour" className="hover:text-[#FFF0A6] hover:underline transition-colors">
                   Virtual Premises Tour
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="hover:text-[#D6B45C] hover:underline transition-colors">
+                <Link to="/contact-us" className="hover:text-[#FFF0A6] hover:underline transition-colors">
                   Contact & Locations
                 </Link>
               </li>
               <li>
-                <Link to="/admin/login" className="text-xs text-[#F6F0E7]/55 hover:text-[#D6B45C] transition-colors">
+                <Link to="/admin/login" className="text-xs text-[#F7F3EC]/55 hover:text-[#FFF0A6] transition-colors">
                   Admin Demo Login
                 </Link>
               </li>
@@ -173,17 +173,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
           </div>
 
           {/* Book Your Appointment Form (Embedded in Footer matching reference) */}
-          <div className="lg:col-span-5 bg-[#181614] rounded-3xl p-6 sm:p-7 border border-[#352B20] shadow-md">
-            <h4 className="font-serif text-xl font-bold text-[#BFA078] tracking-wide mb-1">
+          <div className="lg:col-span-5 bg-[#111111] rounded-3xl p-6 sm:p-7 border border-[#2C2114] shadow-md">
+            <h4 className="font-serif text-xl font-bold text-[#D4A64A] tracking-wide mb-1">
               Book Your Appointment
             </h4>
-            <p className="text-xs text-[#F6F0E7]/70 mb-4">
+            <p className="text-xs text-[#F7F3EC]/70 mb-4">
               Schedule your calm session today.
             </p>
 
             {submitted ? (
-              <div className="py-8 text-center text-[#F6F0E7] space-y-2">
-                <span className="w-10 h-10 rounded-full bg-[#BFA078] text-[#050505] inline-flex items-center justify-center mb-1">
+              <div className="py-8 text-center text-[#F7F3EC] space-y-2">
+                <span className="w-10 h-10 rounded-full bg-[#D4A64A] text-[#000000] inline-flex items-center justify-center mb-1">
                   <Check size={20} />
                 </span>
                 <p className="font-medium text-sm">Demo Request Received!</p>
@@ -199,7 +199,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                   placeholder="Name *"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full bg-[#0C0B0A] border border-[#352B20] rounded-lg px-3 py-2 text-xs text-[#F6F0E7] focus:outline-none focus:border-[#BFA078]"
+                  className="w-full bg-[#0A0A0A] border border-[#2C2114] rounded-lg px-3 py-2 text-xs text-[#F7F3EC] focus:outline-none focus:border-[#D4A64A]"
                 />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <input
@@ -208,21 +208,21 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                     placeholder="Phone *"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    className="w-full bg-[#0C0B0A] border border-[#352B20] rounded-lg px-3 py-2 text-xs text-[#F6F0E7] focus:outline-none focus:border-[#BFA078]"
+                    className="w-full bg-[#0A0A0A] border border-[#2C2114] rounded-lg px-3 py-2 text-xs text-[#F7F3EC] focus:outline-none focus:border-[#D4A64A]"
                   />
                   <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-[#0C0B0A] border border-[#352B20] rounded-lg px-3 py-2 text-xs text-[#F6F0E7] focus:outline-none focus:border-[#BFA078]"
+                    className="w-full bg-[#0A0A0A] border border-[#2C2114] rounded-lg px-3 py-2 text-xs text-[#F7F3EC] focus:outline-none focus:border-[#D4A64A]"
                   />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <select
                     value={service}
                     onChange={(e) => setService(e.target.value)}
-                    className="w-full bg-[#0C0B0A] border border-[#352B20] rounded-lg px-3 py-2 text-xs text-[#F6F0E7] focus:outline-none focus:border-[#BFA078]"
+                    className="w-full bg-[#0A0A0A] border border-[#2C2114] rounded-lg px-3 py-2 text-xs text-[#F7F3EC] focus:outline-none focus:border-[#D4A64A]"
                   >
                     <option value="">Select Service</option>
                     {SERVICES.map((s) => (
@@ -234,7 +234,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                   <select
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    className="w-full bg-[#0C0B0A] border border-[#352B20] rounded-lg px-3 py-2 text-xs text-[#F6F0E7] focus:outline-none focus:border-[#BFA078]"
+                    className="w-full bg-[#0A0A0A] border border-[#2C2114] rounded-lg px-3 py-2 text-xs text-[#F7F3EC] focus:outline-none focus:border-[#D4A64A]"
                   >
                     <option value="">Select Location</option>
                     {LOCATION_BRANCHES.map((b) => (
@@ -250,18 +250,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                     min={today}
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
-                    className="w-full bg-[#0C0B0A] border border-[#352B20] rounded-lg px-3 py-2 text-xs text-[#F6F0E7] focus:outline-none focus:border-[#BFA078]"
+                    className="w-full bg-[#0A0A0A] border border-[#2C2114] rounded-lg px-3 py-2 text-xs text-[#F7F3EC] focus:outline-none focus:border-[#D4A64A]"
                   />
                   <input
                     type="time"
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
-                    className="w-full bg-[#0C0B0A] border border-[#352B20] rounded-lg px-3 py-2 text-xs text-[#F6F0E7] focus:outline-none focus:border-[#BFA078]"
+                    className="w-full bg-[#0A0A0A] border border-[#2C2114] rounded-lg px-3 py-2 text-xs text-[#F7F3EC] focus:outline-none focus:border-[#D4A64A]"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-[#BFA078] to-[#D6B45C] hover:opacity-95 text-[#050505] text-xs font-bold uppercase tracking-wider transition-opacity cursor-pointer shadow-sm flex items-center justify-center gap-2"
+                  className="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] hover:opacity-95 text-[#000000] text-xs font-bold uppercase tracking-wider transition-opacity cursor-pointer shadow-sm flex items-center justify-center gap-2"
                 >
                   <span>Book Appointment</span>
                   <span>────→</span>
@@ -273,12 +273,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
       </div>
 
       {/* Deep Forest Green Bottom Bar */}
-      <div className="bg-[#050505] text-[#F6F0E7]/70 text-xs py-5 px-4 sm:px-6 lg:px-8 border-t border-[#352B20]">
+      <div className="bg-[#000000] text-[#F7F3EC]/70 text-xs py-5 px-4 sm:px-6 lg:px-8 border-t border-[#2C2114]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <p>
             A unit of BAAN Wellness &amp; Aesthetics | &copy; {new Date().getFullYear()} BAAN | All Rights Reserved
           </p>
-          <div className="flex items-center gap-6 text-[#BFA078]">
+          <div className="flex items-center gap-6 text-[#D4A64A]">
             <Link to="/contact-us" className="hover:underline">
               Terms and Conditions
             </Link>

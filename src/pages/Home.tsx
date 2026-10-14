@@ -43,14 +43,14 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       <section
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={handleHeroMouseLeave}
-        className="home-hero relative w-full bg-[#050505] pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden border-b border-[#352B20]"
+        className="home-hero relative w-full bg-[#000000] pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden border-b border-[#2C2114]"
       >
         {/* Interactive 3D Canvas Background with orbital rings and floating gold ember particles */}
         <Hero3DCanvas className="opacity-90" />
 
         {/* Ambient Dark Vignette & Gold Spotlight Gradient */}
         <div
-          className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_70%_45%,rgba(214,180,92,0.12)_0%,rgba(5,5,5,0.7)_50%,#050505_90%)]"
+          className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(circle_at_70%_45%,rgba(214,180,92,0.12)_0%,rgba(5,5,5,0.7)_50%,#000000_90%)]"
           aria-hidden="true"
         />
 
@@ -65,8 +65,8 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               }}
             >
               <div data-motion-reveal data-motion-delay="0" className="inline-flex items-center gap-2">
-                <span className="w-6 h-[1px] bg-[#D6B45C]" />
-                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#D6B45C] uppercase">
+                <span className="w-6 h-[1px] bg-[#FFF0A6]" />
+                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#FFF0A6] uppercase">
                   BAAN · SALON · BEAUTY · SPA
                 </span>
               </div>
@@ -74,11 +74,11 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               <h1
                 data-motion-reveal
                 data-motion-delay="100"
-                className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[46px] leading-[1.12] text-[#BFA078] font-bold uppercase tracking-tight drop-shadow-[0_2px_18px_rgba(214,180,92,0.15)]"
+                className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[46px] leading-[1.12] text-[#D4A64A] font-bold uppercase tracking-tight drop-shadow-[0_2px_18px_rgba(214,180,92,0.15)]"
               >
                 Experience the
                 <br />
-                <span className="bg-gradient-to-r from-[#BFA078] via-[#D6B45C] to-[#BFA078] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#D4A64A] via-[#FFF0A6] to-[#D4A64A] bg-clip-text text-transparent">
                   serenity of BAAN
                 </span>
               </h1>
@@ -86,7 +86,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               <p
                 data-motion-reveal
                 data-motion-delay="210"
-                className="text-base sm:text-lg text-[#F6F0E7]/85 font-normal max-w-md leading-relaxed"
+                className="text-base sm:text-lg text-[#F7F3EC]/85 font-normal max-w-md leading-relaxed"
               >
                 Escape to a luxury sanctuary where authentic Balinese bodywork, couture hair rituals and personalized treatments renew your essence.
               </p>
@@ -100,7 +100,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 />
                 <Link
                   to="/service"
-                  className="hidden sm:inline-flex items-center gap-1.5 text-xs uppercase tracking-wider text-[#F6F0E7]/80 hover:text-[#D6B45C] transition-colors py-2 px-3 border-b border-transparent hover:border-[#D6B45C]"
+                  className="hidden sm:inline-flex items-center gap-1.5 text-xs uppercase tracking-wider text-[#F7F3EC]/80 hover:text-[#FFF0A6] transition-colors py-2 px-3 border-b border-transparent hover:border-[#FFF0A6]"
                 >
                   Explore Rituals
                 </Link>
@@ -127,7 +127,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 maxTilt={6}
                 scale={1.015}
                 glare={true}
-                className="w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85)] border border-[#BFA078]/40 bg-[#181614] group"
+                className="w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85)] border border-[#D4A64A]/40 bg-[#111111] group"
               >
                 <ImageWithFallback
                   src={IMAGES.heroSpaTreatment}
@@ -145,7 +145,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                     alt="BAAN Crest"
                     className="h-10 sm:h-12 w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] transition-transform duration-500 group-hover:scale-110"
                   />
-                  <p className="text-[11px] uppercase tracking-widest text-[#D6B45C] mt-2 font-medium drop-shadow-sm">
+                  <p className="text-[11px] uppercase tracking-widest text-[#FFF0A6] mt-2 font-medium drop-shadow-sm">
                     The Art of Serenity
                   </p>
                 </div>
@@ -161,14 +161,14 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 2. TRUSTED LEADERSHIP IN INDUSTRY / STATISTICS SECTION (With Interactive 3D Tilt) */}
-      <section className="home-stats w-full bg-[#181614] py-16 lg:py-20">
+      <section className="home-stats w-full bg-[#111111] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#BFA078] font-bold tracking-tight">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#D4A64A] font-bold tracking-tight">
               Trusted Leadership in Industry
             </h2>
             <GoldDivider />
-            <p className="text-xs uppercase tracking-widest text-[#977344]">
+            <p className="text-xs uppercase tracking-widest text-[#8C5A1E]">
               Demonstration Highlights &amp; Capacity
             </p>
           </div>
@@ -183,7 +183,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 className="home-stat-card bg-white rounded-[32px] p-8 flex flex-col items-center text-center shadow-xs cursor-default"
               >
                 {/* Round Ivory Circle Badge with Icon */}
-                <div className="w-20 h-20 rounded-full bg-[#F6F0E7] border border-[#E8E0D6] flex items-center justify-center mb-6 shadow-xs text-[#977344] transition-transform duration-300 group-hover:scale-110">
+                <div className="w-20 h-20 rounded-full bg-[#F7F3EC] border border-[#E7DED0] flex items-center justify-center mb-6 shadow-xs text-[#8C5A1E] transition-transform duration-300 group-hover:scale-110">
                   {stat.id === 'locations' && <Building2 size={30} strokeWidth={1.5} />}
                   {stat.id === 'therapists' && <Users size={30} strokeWidth={1.5} />}
                   {stat.id === 'space' && <Maximize2 size={30} strokeWidth={1.5} />}
@@ -191,13 +191,13 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 </div>
 
                 {/* Big Serif Number */}
-                <div className="font-serif text-3xl sm:text-4xl font-bold text-[#050505] flex items-baseline">
+                <div className="font-serif text-3xl sm:text-4xl font-bold text-[#000000] flex items-baseline">
                   <span>{stat.number}</span>
-                  <span className="text-2xl font-normal ml-0.5 text-[#BFA078]">{stat.suffix}</span>
+                  <span className="text-2xl font-normal ml-0.5 text-[#D4A64A]">{stat.suffix}</span>
                 </div>
 
                 {/* Label */}
-                <h3 className="text-xs font-semibold uppercase tracking-wider text-[#181614] mt-2">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-[#111111] mt-2">
                   {stat.label}
                 </h3>
                 <p className="text-[11px] text-[#5f574e] mt-1">
@@ -212,10 +212,10 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       <QuickBookingBar onOpenBooking={() => onOpenBooking()} />
 
       {/* 4. MAIN BRAND INTRODUCTION (Split layout with palm leaf background touches) */}
-      <section id="home-story" className="home-intro relative w-full bg-[#F6F0E7] py-20 lg:py-28 overflow-hidden">
+      <section id="home-story" className="home-intro relative w-full bg-[#F7F3EC] py-20 lg:py-28 overflow-hidden">
         {/* Subtle decorative leaf silhouette watermark */}
         <div className="absolute top-0 right-0 w-96 h-96 opacity-10 pointer-events-none select-none">
-          <svg viewBox="0 0 200 200" fill="#BFA078" className="w-full h-full">
+          <svg viewBox="0 0 200 200" fill="#D4A64A" className="w-full h-full">
             <path d="M45,15 C60,40 80,70 120,80 C90,95 60,110 30,135 C50,110 70,85 55,60 Z" />
           </svg>
         </div>
@@ -225,13 +225,13 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
             
             {/* Left Column Copy */}
             <div className="lg:col-span-5 space-y-6">
-              <span className="home-intro-eyebrow text-xs font-semibold tracking-widest text-[#977344] uppercase block">
+              <span className="home-intro-eyebrow text-xs font-semibold tracking-widest text-[#8C5A1E] uppercase block">
                 The BAAN Experience
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] text-[#050505] font-bold leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] text-[#000000] font-bold leading-tight">
                 Welcome to BAAN,
               </h2>
-              <p className="text-base text-[#352B20] leading-relaxed">
+              <p className="text-base text-[#2C2114] leading-relaxed">
                 Step into BAAN B — a full-service salon, spa and bridal destination where personalized treatments refresh your look, uplift your mood and boost your confidence. Enjoy complimentary drinks and refreshments as you unwind.
               </p>
               <div className="pt-2">
@@ -248,7 +248,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               <TiltCard
                 maxTilt={5}
                 scale={1.01}
-                className="relative rounded-[32px] overflow-hidden shadow-xl aspect-[16/10] bg-[#181614] border border-[#BFA078]/30"
+                className="relative rounded-[32px] overflow-hidden shadow-xl aspect-[16/10] bg-[#111111] border border-[#D4A64A]/30"
               >
                 <ImageWithFallback
                   src={IMAGES.aboutHero}
@@ -264,10 +264,10 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 5. QUALITY HIGHLIGHTS SECTION (3 Interactive 3D Cards) */}
-      <section className="home-highlights w-full bg-[#181614] py-16 lg:py-24">
+      <section className="home-highlights w-full bg-[#111111] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#BFA078] font-bold tracking-tight">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#D4A64A] font-bold tracking-tight">
               Authentic Balinese experience
             </h2>
             <GoldDivider />
@@ -279,20 +279,20 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               maxTilt={7}
               scale={1.02}
               glare={true}
-              className="bg-[#0C0B0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between min-h-[360px] border border-[#352B20]"
+              className="bg-[#0A0A0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between min-h-[360px] border border-[#2C2114]"
             >
               <div className="space-y-4">
-                <h3 className="font-serif text-2xl text-[#BFA078] font-bold">
+                <h3 className="font-serif text-2xl text-[#D4A64A] font-bold">
                   The BAAN experience
                 </h3>
-                <p className="text-sm text-[#F6F0E7]/80 leading-relaxed">
+                <p className="text-sm text-[#F7F3EC]/80 leading-relaxed">
                   Escape into tranquility with our traditional Balinese palm therapies, aromatic oils and serene ambient music.
                 </p>
               </div>
               <div className="pt-8">
                 <Link
                   to="/service"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#BFA078] hover:text-[#D6B45C] group transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#D4A64A] hover:text-[#FFF0A6] group transition-colors"
                 >
                   <span>Discover Rituals</span>
                   <span className="transition-transform group-hover:translate-x-1.5">────→</span>
@@ -305,20 +305,20 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               maxTilt={7}
               scale={1.02}
               glare={true}
-              className="bg-[#0C0B0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between min-h-[360px] border border-[#352B20]"
+              className="bg-[#0A0A0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between min-h-[360px] border border-[#2C2114]"
             >
               <div className="space-y-4">
-                <h3 className="font-serif text-2xl text-[#BFA078] font-bold">
+                <h3 className="font-serif text-2xl text-[#D4A64A] font-bold">
                   Professional Therapists
                 </h3>
-                <p className="text-sm text-[#F6F0E7]/80 leading-relaxed">
+                <p className="text-sm text-[#F7F3EC]/80 leading-relaxed">
                   Experience expert bodywork and couture hair design from masters trained in international techniques and authentic disciplines.
                 </p>
               </div>
               <div className="pt-8">
                 <Link
                   to="/about"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#BFA078] hover:text-[#D6B45C] group transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#D4A64A] hover:text-[#FFF0A6] group transition-colors"
                 >
                   <span>Our Philosophy</span>
                   <span className="transition-transform group-hover:translate-x-1.5">────→</span>
@@ -331,20 +331,20 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
               maxTilt={7}
               scale={1.02}
               glare={true}
-              className="bg-[#0C0B0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between min-h-[360px] border border-[#352B20]"
+              className="bg-[#0A0A0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between min-h-[360px] border border-[#2C2114]"
             >
               <div className="space-y-4">
-                <h3 className="font-serif text-2xl text-[#BFA078] font-bold">
+                <h3 className="font-serif text-2xl text-[#D4A64A] font-bold">
                   Personalised Services
                 </h3>
-                <p className="text-sm text-[#F6F0E7]/80 leading-relaxed">
+                <p className="text-sm text-[#F7F3EC]/80 leading-relaxed">
                   Every ritual begins with a quiet consultation so pressure, essential oils and focus areas match your exact energy today.
                 </p>
               </div>
               <div className="pt-8">
                 <button
                   onClick={() => onOpenBooking()}
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#BFA078] hover:text-[#D6B45C] group cursor-pointer bg-transparent border-0 p-0 transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-[#D4A64A] hover:text-[#FFF0A6] group cursor-pointer bg-transparent border-0 p-0 transition-colors"
                 >
                   <span>Book Private Session</span>
                   <span className="transition-transform group-hover:translate-x-1.5">────→</span>
@@ -356,10 +356,10 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 6. OUR SERVICES SHOWCASE (With 3D Perspective Tilt on Every Service Card) */}
-      <section className="home-services w-full bg-[#F6F0E7] py-16 lg:py-24 border-t border-[#E8E0D6]">
+      <section className="home-services w-full bg-[#F7F3EC] py-16 lg:py-24 border-t border-[#E7DED0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#050505] font-bold tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#000000] font-bold tracking-tight">
               Our Services
             </h2>
             <GoldDivider />
@@ -420,7 +420,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 maxTilt={7}
                 scale={1.02}
                 glare={true}
-                className="home-service-card bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col group border border-[#E8E0D6] snap-start"
+                className="home-service-card bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col group border border-[#E7DED0] snap-start"
               >
                 {/* Photo */}
                 <Link
@@ -436,7 +436,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                     fallbackText={service.title}
                   />
                   {/* Floating Price Pill */}
-                  <span className="absolute bottom-2.5 right-2.5 bg-[#050505]/85 backdrop-blur-xs text-[#D6B45C] text-xs font-semibold px-2.5 py-1 rounded-full border border-[#D6B45C]/40">
+                  <span className="absolute bottom-2.5 right-2.5 bg-[#000000]/85 backdrop-blur-xs text-[#FFF0A6] text-xs font-semibold px-2.5 py-1 rounded-full border border-[#FFF0A6]/40">
                     {service.price}
                   </span>
                 </Link>
@@ -444,23 +444,23 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 {/* Warm Ivory Bottom Container */}
                 <div className="p-4 bg-white flex-1 flex flex-col justify-between text-center">
                   <div>
-                    <h3 className="font-medium text-sm text-[#181614] group-hover:text-[#977344] transition-colors line-clamp-2">
+                    <h3 className="font-medium text-sm text-[#111111] group-hover:text-[#8C5A1E] transition-colors line-clamp-2">
                       <Link to={`/service/${service.slug}`}>{service.title}</Link>
                     </h3>
                     <p className="text-xs text-[#5f574e] mt-1">
                       {service.duration}
                     </p>
                   </div>
-                  <div className="mt-3 pt-2 border-t border-[#E8E0D6] flex items-center justify-between">
+                  <div className="mt-3 pt-2 border-t border-[#E7DED0] flex items-center justify-between">
                     <Link
                       to={`/service/${service.slug}`}
-                      className="text-[11px] text-[#5f574e] hover:text-[#050505] transition-colors"
+                      className="text-[11px] text-[#5f574e] hover:text-[#000000] transition-colors"
                     >
                       Details
                     </Link>
                     <button
                       onClick={() => onOpenBooking(service.slug)}
-                      className="text-xs text-[#977344] font-semibold hover:text-[#D6B45C] hover:underline inline-flex items-center gap-1 cursor-pointer"
+                      className="text-xs text-[#8C5A1E] font-semibold hover:text-[#FFF0A6] hover:underline inline-flex items-center gap-1 cursor-pointer"
                     >
                       <span>Book</span>
                       <span>→</span>
@@ -481,17 +481,17 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 7. MEMBERSHIP PROMOTIONAL BANNER */}
-      <section className="home-membership w-full bg-[#050505] py-14 lg:py-20 border-y border-[#352B20]">
+      <section className="home-membership w-full bg-[#000000] py-14 lg:py-20 border-y border-[#2C2114]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#D6B45C]">
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#FFF0A6]">
                 Exclusive Wellness Privileges
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#BFA078] font-bold mt-1">
+              <h2 className="font-serif text-3xl sm:text-4xl text-[#D4A64A] font-bold mt-1">
                 Membership Privileges
               </h2>
-              <p className="text-sm text-[#F6F0E7]/80 mt-1 max-w-lg">
+              <p className="text-sm text-[#F7F3EC]/80 mt-1 max-w-lg">
                 Unlock prepaid hours (BBH), complimentary luxury scrubs, and priority reservations across all 4 Hyderabad sanctuaries.
               </p>
             </div>
@@ -503,10 +503,10 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 8. EDITORIAL / BLOG PREVIEW SECTION (With 3D Tilt Cards) */}
-      <section className="home-blog w-full bg-[#F6F0E7] py-16 lg:py-24">
+      <section className="home-blog w-full bg-[#F7F3EC] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#050505] font-bold tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#000000] font-bold tracking-tight">
               Wellness Journal
             </h2>
             <GoldDivider />
@@ -519,7 +519,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 maxTilt={6}
                 scale={1.015}
                 glare={true}
-                className="bg-white rounded-3xl overflow-hidden border border-[#E8E0D6] flex flex-col group shadow-xs hover:shadow-md cursor-default"
+                className="bg-white rounded-3xl overflow-hidden border border-[#E7DED0] flex flex-col group shadow-xs hover:shadow-md cursor-default"
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   <ImageWithFallback
@@ -532,19 +532,19 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 </div>
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-[#BFA078] block mb-2">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-[#D4A64A] block mb-2">
                       {post.category} · {post.readTime}
                     </span>
-                    <h3 className="font-serif text-xl font-bold text-[#181614] group-hover:text-[#977344] transition-colors leading-snug">
+                    <h3 className="font-serif text-xl font-bold text-[#111111] group-hover:text-[#8C5A1E] transition-colors leading-snug">
                       {post.title}
                     </h3>
                     <p className="text-xs text-[#5f574e] mt-2 line-clamp-3 leading-relaxed">
                       {post.excerpt}
                     </p>
                   </div>
-                  <div className="pt-4 mt-4 border-t border-[#E8E0D6] flex items-center justify-between text-xs text-[#5f574e]">
+                  <div className="pt-4 mt-4 border-t border-[#E7DED0] flex items-center justify-between text-xs text-[#5f574e]">
                     <span>{post.date}</span>
-                    <span className="font-medium text-[#977344] group-hover:translate-x-1.5 transition-transform inline-flex items-center gap-1">
+                    <span className="font-medium text-[#8C5A1E] group-hover:translate-x-1.5 transition-transform inline-flex items-center gap-1">
                       Read Article ────→
                     </span>
                   </div>
@@ -572,10 +572,10 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 10. CUSTOMER TESTIMONIALS SECTION (Interactive 3D Carousel with Working Controls) */}
-      <section className="home-testimonials w-full bg-[#181614] py-16 lg:py-24 border-t border-[#352B20]">
+      <section className="home-testimonials w-full bg-[#111111] py-16 lg:py-24 border-t border-[#2C2114]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#BFA078] font-bold tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#D4A64A] font-bold tracking-tight">
               Customer Testimonials
             </h2>
             <GoldDivider />
@@ -588,22 +588,22 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
                 maxTilt={6}
                 scale={1.02}
                 glare={true}
-                className={`bg-[#0C0B0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between shadow-xs border border-[#352B20] ${activeTestimonial === index ? 'testimonial-active' : 'hidden'} md:flex`}
+                className={`bg-[#0A0A0A] rounded-[32px] p-8 sm:p-10 flex flex-col justify-between shadow-xs border border-[#2C2114] ${activeTestimonial === index ? 'testimonial-active' : 'hidden'} md:flex`}
               >
                 <div>
-                  <div className="text-[#D6B45C] text-lg mb-4 tracking-widest">★★★★★</div>
-                  <blockquote className="font-serif italic text-base text-[#F6F0E7] leading-relaxed">
+                  <div className="text-[#FFF0A6] text-lg mb-4 tracking-widest">★★★★★</div>
+                  <blockquote className="font-serif italic text-base text-[#F7F3EC] leading-relaxed">
                     “{review.quote}”
                   </blockquote>
                 </div>
-                <div className="pt-6 mt-6 border-t border-[#352B20] text-center">
-                  <p className="font-serif font-bold text-base text-[#BFA078]">
+                <div className="pt-6 mt-6 border-t border-[#2C2114] text-center">
+                  <p className="font-serif font-bold text-base text-[#D4A64A]">
                     {review.name}
                   </p>
-                  <p className="text-[11px] text-[#F6F0E7]/65 mt-0.5">
+                  <p className="text-[11px] text-[#F7F3EC]/65 mt-0.5">
                     {review.location}
                   </p>
-                  <span className="inline-block text-[9px] uppercase tracking-wider text-[#D6B45C] mt-2 px-2.5 py-0.5 bg-[#181614] rounded-full border border-[#BFA078]/20">
+                  <span className="inline-block text-[9px] uppercase tracking-wider text-[#FFF0A6] mt-2 px-2.5 py-0.5 bg-[#111111] rounded-full border border-[#D4A64A]/20">
                     {review.note}
                   </span>
                 </div>

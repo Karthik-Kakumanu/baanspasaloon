@@ -54,7 +54,7 @@ export const Hero3DCanvas: React.FC<Hero3DCanvasProps> = ({ className = '' }) =>
       opacity: Math.random() * 0.6 + 0.2,
       pulse: Math.random() * Math.PI * 2,
       pulseSpeed: Math.random() * 0.02 + 0.01,
-      color: Math.random() > 0.4 ? '#BFA078' : '#D6B45C',
+      color: Math.random() > 0.4 ? '#D4A64A' : '#FFF0A6',
     }));
 
     // Orbital 3D luxury rings state
@@ -142,7 +142,7 @@ export const Hero3DCanvas: React.FC<Hero3DCanvasProps> = ({ className = '' }) =>
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fillStyle = p.color;
         ctx.globalAlpha = currentOpacity;
-        ctx.shadowColor = '#D6B45C';
+        ctx.shadowColor = '#FFF0A6';
         ctx.shadowBlur = 6;
         ctx.fill();
         ctx.restore();

@@ -93,7 +93,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
   return (
     <div className="page-services w-full">
       {/* 1. Services hero */}
-      <section className="relative w-full bg-[#050505] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#352B20] overflow-hidden">
+      <section className="relative w-full bg-[#000000] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#2C2114] overflow-hidden">
         <Hero3DCanvas className="opacity-80" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -101,15 +101,15 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
             {/* Left Copy */}
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2">
-                <span className="w-6 h-[1px] bg-[#D6B45C]" />
-                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#D6B45C] uppercase">
+                <span className="w-6 h-[1px] bg-[#FFF0A6]" />
+                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#FFF0A6] uppercase">
                   HAIR · BEAUTY · BODY RITUALS
                 </span>
               </div>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#BFA078] font-bold uppercase tracking-tight">
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#D4A64A] font-bold uppercase tracking-tight">
                 Our Services
               </h1>
-              <p className="text-base text-[#F6F0E7]/85 max-w-sm leading-relaxed">
+              <p className="text-base text-[#F7F3EC]/85 max-w-sm leading-relaxed">
                 Immerse yourself in authentic Balinese massages, couture hair rituals, and restorative Ayurvedic therapies designed to harmonize mind, body and spirit.
               </p>
               <div className="pt-2">
@@ -133,7 +133,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
               <TiltCard
                 maxTilt={6}
                 scale={1.015}
-                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#BFA078]/40 bg-[#181614]"
+                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#D4A64A]/40 bg-[#111111]"
               >
                 <ImageWithFallback
                   src={IMAGES.servicesHero}
@@ -149,9 +149,9 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 2. CENTERED SECTION TITLE */}
-      <section className="services-title w-full bg-[#F6F0E7] pt-16 pb-4">
+      <section className="services-title w-full bg-[#F7F3EC] pt-16 pb-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl text-[#050505] font-bold tracking-tight uppercase">
+          <h2 className="font-serif text-3xl sm:text-4xl text-[#000000] font-bold tracking-tight uppercase">
             Curated Treatment Menu
           </h2>
           <GoldDivider />
@@ -159,7 +159,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 3. CATEGORY FILTER TABS (Warm Tan / Wood Tone matching reference) */}
-      <section className="services-category-filter w-full bg-[#F6F0E7] pb-8">
+      <section className="services-category-filter w-full bg-[#F7F3EC] pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 py-2" role="group" aria-label="Filter services by category">
             {SERVICE_CATEGORIES.map((cat) => {
@@ -171,8 +171,8 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                   aria-pressed={isSelected}
                   className={`px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all cursor-pointer ${
                     isSelected
-                      ? 'bg-[#BFA078] text-[#050505] shadow-sm'
-                      : 'bg-[#0C0B0A] text-[#F6F0E7] hover:bg-[#352B20]'
+                      ? 'bg-[#D4A64A] text-[#000000] shadow-sm'
+                      : 'bg-[#0A0A0A] text-[#F7F3EC] hover:bg-[#2C2114]'
                   }`}
                 >
                   {cat.name}
@@ -184,7 +184,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 5. 5-COLUMN SERVICE GRID */}
-      <section className="services-grid-section w-full bg-[#F6F0E7] py-16 lg:py-20">
+      <section className="services-grid-section w-full bg-[#F7F3EC] py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <p className="sr-only" aria-live="polite">
@@ -198,7 +198,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                 maxTilt={8}
                 scale={1.02}
                 glare={true}
-                className="service-card bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col group border border-[#E8E0D6]"
+                className="service-card bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col group border border-[#E7DED0]"
               >
                 <Link
                   to={`/service/${service.slug}`}
@@ -211,19 +211,19 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                     popular={service.popular}
                   />
                   {service.popular && (
-                    <span className="absolute top-2 right-2 bg-gradient-to-r from-[#BFA078] to-[#D6B45C] text-[#050505] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+                    <span className="absolute top-2 right-2 bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] text-[#000000] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
                       Popular
                     </span>
                   )}
                   {/* Floating price pill */}
-                  <span className="absolute bottom-2.5 right-2.5 bg-[#050505]/85 backdrop-blur-xs text-[#D6B45C] text-xs font-semibold px-2.5 py-0.5 rounded-full border border-[#D6B45C]/40">
+                  <span className="absolute bottom-2.5 right-2.5 bg-[#000000]/85 backdrop-blur-xs text-[#FFF0A6] text-xs font-semibold px-2.5 py-0.5 rounded-full border border-[#FFF0A6]/40">
                     {service.price}
                   </span>
                 </Link>
 
                 <div className="p-4 bg-white flex-1 flex flex-col justify-between text-center">
                   <div>
-                    <h3 className="font-medium text-sm text-[#181614] group-hover:text-[#977344] transition-colors line-clamp-2">
+                    <h3 className="font-medium text-sm text-[#111111] group-hover:text-[#8C5A1E] transition-colors line-clamp-2">
                       <Link to={`/service/${service.slug}`}>{service.title}</Link>
                     </h3>
                     <p className="text-[11px] text-[#5f574e] mt-1">
@@ -231,16 +231,16 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                     </p>
                   </div>
                   
-                  <div className="mt-4 pt-2 border-t border-[#E8E0D6] flex items-center justify-between text-xs">
+                  <div className="mt-4 pt-2 border-t border-[#E7DED0] flex items-center justify-between text-xs">
                     <Link
                       to={`/service/${service.slug}`}
-                      className="text-[#5f574e] hover:text-[#050505] transition-colors"
+                      className="text-[#5f574e] hover:text-[#000000] transition-colors"
                     >
                       Details
                     </Link>
                     <button
                       onClick={() => onOpenBooking(service.slug)}
-                      className="text-[#977344] font-semibold hover:text-[#D6B45C] hover:underline inline-flex items-center gap-1 cursor-pointer"
+                      className="text-[#8C5A1E] font-semibold hover:text-[#FFF0A6] hover:underline inline-flex items-center gap-1 cursor-pointer"
                     >
                       <span>Book</span>
                       <span>→</span>
@@ -252,9 +252,9 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
           </div>
 
           {filteredServices.length === 0 && (
-            <div className="text-center py-16 bg-[#181614] rounded-3xl border border-[#352B20] p-8 max-w-lg mx-auto">
-              <Sparkles className="w-10 h-10 text-[#BFA078] mx-auto mb-3" />
-              <p className="font-serif text-xl text-[#BFA078] font-semibold">
+            <div className="text-center py-16 bg-[#111111] rounded-3xl border border-[#2C2114] p-8 max-w-lg mx-auto">
+              <Sparkles className="w-10 h-10 text-[#D4A64A] mx-auto mb-3" />
+              <p className="font-serif text-xl text-[#D4A64A] font-semibold">
                 No rituals found in this category
               </p>
               <button
@@ -303,27 +303,27 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
             
             {/* Left Column Copy */}
             <div className="lg:col-span-5 space-y-5">
-              <h3 className="font-serif text-3xl sm:text-4xl text-[#BFA078] font-bold leading-tight">
+              <h3 className="font-serif text-3xl sm:text-4xl text-[#D4A64A] font-bold leading-tight">
                 Ready to Bring Out the Best Version of You
               </h3>
-              <p className="text-sm sm:text-base text-[#F6F0E7] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F7F3EC] leading-relaxed">
                 Book an appointment with BAAN and let our certified master therapists and couture hair stylists transform your look. Experience the perfect blend of professionalism, authenticity, and peace.
               </p>
-              <div className="space-y-3 pt-2 text-sm text-[#F6F0E7]">
+              <div className="space-y-3 pt-2 text-sm text-[#F7F3EC]">
                 <div className="flex items-center gap-2">
-                  <span className="w-5 h-5 rounded-full bg-[#BFA078] text-[#050505] flex items-center justify-center text-xs">
+                  <span className="w-5 h-5 rounded-full bg-[#D4A64A] text-[#000000] flex items-center justify-center text-xs">
                     ✓
                   </span>
                   <span>Pure Organic Botanical Oils &amp; Clays</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-5 h-5 rounded-full bg-[#BFA078] text-[#050505] flex items-center justify-center text-xs">
+                  <span className="w-5 h-5 rounded-full bg-[#D4A64A] text-[#000000] flex items-center justify-center text-xs">
                     ✓
                   </span>
                   <span>Private Hydrotherapy &amp; Steam Rooms</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-5 h-5 rounded-full bg-[#BFA078] text-[#050505] flex items-center justify-center text-xs">
+                  <span className="w-5 h-5 rounded-full bg-[#D4A64A] text-[#000000] flex items-center justify-center text-xs">
                     ✓
                   </span>
                   <span>Four Convenient Hyderabad Sanctuaries</span>
@@ -333,7 +333,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
 
             {/* Right Column Form Box matching reference container */}
             <div className="lg:col-span-7">
-              <div className="border border-[#352B20] rounded-[32px] p-8 sm:p-10 bg-[#181614] shadow-sm">
+              <div className="border border-[#2C2114] rounded-[32px] p-8 sm:p-10 bg-[#111111] shadow-sm">
                 <form
                   onSubmit={(e) => {
                     e.preventDefault();
@@ -380,7 +380,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                   <div className="pt-4 text-center">
                     <button
                       type="submit"
-                      className="w-full sm:w-auto px-10 py-3 rounded-full bg-[#BFA078] text-[#050505] hover:bg-[#D6B45C] border border-[#BFA078] transition-all text-sm font-semibold tracking-wide cursor-pointer"
+                      className="w-full sm:w-auto px-10 py-3 rounded-full bg-[#D4A64A] text-[#000000] hover:bg-[#FFF0A6] border border-[#D4A64A] transition-all text-sm font-semibold tracking-wide cursor-pointer"
                     >
                       Book Appointment
                     </button>
@@ -411,7 +411,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
             tabIndex={-1}
             onMouseDown={(event) => event.stopPropagation()}
           >
-            <div className="flex flex-shrink-0 items-start justify-between gap-4 border-b border-[#E8E0D6] px-5 py-5 sm:px-8 sm:py-6">
+            <div className="flex flex-shrink-0 items-start justify-between gap-4 border-b border-[#E7DED0] px-5 py-5 sm:px-8 sm:py-6">
               <div>
                 <h3 id="catalogue-title" className="font-serif text-2xl font-bold text-[#28231F] sm:text-3xl">
                   BAAN Complete Treatment Catalogue
@@ -422,7 +422,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
               </div>
               <button
                 onClick={() => setMenuModalOpen(false)}
-                className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-[#D8C6AD] text-xl text-[#28231F] transition-colors hover:bg-[#BFA078] focus:outline-none focus:ring-2 focus:ring-[#BFA078]"
+                className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-[#D8C6AD] text-xl text-[#28231F] transition-colors hover:bg-[#D4A64A] focus:outline-none focus:ring-2 focus:ring-[#D4A64A]"
                 aria-label="Close treatment catalogue"
               >
                 ✕
@@ -433,7 +433,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
               {SERVICES.map((s) => (
                 <div
                   key={s.slug}
-                  className="flex flex-col items-stretch gap-3 rounded-2xl border border-[#E8E0D6] bg-white p-4 transition-shadow hover:shadow-md sm:flex-row sm:items-start sm:justify-between sm:gap-6 sm:p-5"
+                  className="flex flex-col items-stretch gap-3 rounded-2xl border border-[#E7DED0] bg-white p-4 transition-shadow hover:shadow-md sm:flex-row sm:items-start sm:justify-between sm:gap-6 sm:p-5"
                 >
                   <div className="min-w-0">
                     <h4 className="font-medium text-sm leading-snug text-[#28231F] sm:text-base">
@@ -442,7 +442,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                     <p className="text-xs text-gray-500">{s.category} · {s.duration}</p>
                     <p className="text-xs text-gray-600 mt-1">{s.description}</p>
                   </div>
-                  <div className="flex flex-shrink-0 items-center justify-between gap-4 border-t border-[#E8E0D6] pt-3 sm:min-w-[130px] sm:flex-col sm:items-end sm:border-t-0 sm:pt-0">
+                  <div className="flex flex-shrink-0 items-center justify-between gap-4 border-t border-[#E7DED0] pt-3 sm:min-w-[130px] sm:flex-col sm:items-end sm:border-t-0 sm:pt-0">
                     <span className="font-serif text-base font-bold text-[#28231F]">
                       {s.price}
                     </span>
@@ -451,7 +451,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                         setMenuModalOpen(false);
                         onOpenBooking(s.slug);
                       }}
-                      className="text-xs font-semibold text-[#927449] transition-colors hover:text-[#28231F] hover:underline focus:outline-none focus:ring-2 focus:ring-[#BFA078]"
+                      className="text-xs font-semibold text-[#927449] transition-colors hover:text-[#28231F] hover:underline focus:outline-none focus:ring-2 focus:ring-[#D4A64A]"
                     >
                       Book →
                     </button>

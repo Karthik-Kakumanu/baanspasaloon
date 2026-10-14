@@ -49,7 +49,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
   return (
     <div className="page-contact w-full">
       {/* 1. Contact hero */}
-      <section className="relative w-full bg-[#050505] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#352B20] overflow-hidden">
+      <section className="relative w-full bg-[#000000] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#2C2114] overflow-hidden">
         <Hero3DCanvas className="opacity-80" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -57,15 +57,15 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
             {/* Left Copy */}
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2">
-                <span className="w-6 h-[1px] bg-[#D6B45C]" />
-                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#D6B45C] uppercase">
+                <span className="w-6 h-[1px] bg-[#FFF0A6]" />
+                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#FFF0A6] uppercase">
                   CONCIERGE & APPOINTMENTS
                 </span>
               </div>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#BFA078] font-bold uppercase tracking-tight">
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#D4A64A] font-bold uppercase tracking-tight">
                 Contact Us
               </h1>
-              <p className="text-base text-[#F6F0E7]/85 max-w-sm leading-relaxed">
+              <p className="text-base text-[#F7F3EC]/85 max-w-sm leading-relaxed">
                 Connect with our concierge to book bespoke appointments, corporate retreats or ask questions about our rituals.
               </p>
               <div className="pt-2">
@@ -89,7 +89,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
               <TiltCard
                 maxTilt={6}
                 scale={1.015}
-                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#BFA078]/40 bg-[#181614]"
+                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#D4A64A]/40 bg-[#111111]"
               >
                 <ImageWithFallback
                   src={IMAGES.contactHero}
@@ -105,7 +105,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 2. OUR LOCATIONS SECTION (With Interactive 3D Tilt on each Branch card) */}
-      <section className="relative w-full bg-[#181614] py-16 lg:py-24 overflow-hidden">
+      <section className="relative w-full bg-[#111111] py-16 lg:py-24 overflow-hidden">
         {/* Subtle Watermark */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
           <img
@@ -117,7 +117,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="font-serif text-3xl sm:text-4xl text-[#BFA078] font-bold tracking-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl text-[#D4A64A] font-bold tracking-tight">
               Our Locations
             </h2>
             <GoldDivider />
@@ -130,35 +130,35 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                 maxTilt={7}
                 scale={1.02}
                 glare={true}
-                className="bg-[#0C0B0A] rounded-3xl p-6 sm:p-7 text-[#F6F0E7] flex flex-col justify-between shadow-xl relative border border-[#352B20] hover:border-[#D6B45C]/50 transition-colors"
+                className="bg-[#0A0A0A] rounded-3xl p-6 sm:p-7 text-[#F7F3EC] flex flex-col justify-between shadow-xl relative border border-[#2C2114] hover:border-[#FFF0A6]/50 transition-colors"
               >
                 {/* Branch Header Tab */}
-                <div className="bg-[#181614] rounded-full py-1.5 px-4 text-center shadow-xs mb-6 border border-[#BFA078]/25">
-                  <h3 className="font-serif font-bold text-sm sm:text-base text-[#D6B45C]">
+                <div className="bg-[#111111] rounded-full py-1.5 px-4 text-center shadow-xs mb-6 border border-[#D4A64A]/25">
+                  <h3 className="font-serif font-bold text-sm sm:text-base text-[#FFF0A6]">
                     {b.name.replace(' Studio', '').replace(' Retreat', '').replace(' Flagship', '').replace(' Financial District', '')}
                   </h3>
                 </div>
 
                 {/* Details */}
-                <div className="space-y-4 text-xs sm:text-[13px] text-[#F6F0E7]/85 leading-relaxed flex-1">
+                <div className="space-y-4 text-xs sm:text-[13px] text-[#F7F3EC]/85 leading-relaxed flex-1">
                   <div className="flex items-start gap-2.5">
-                    <MapPin size={16} className="text-[#BFA078] mt-0.5 flex-shrink-0" />
+                    <MapPin size={16} className="text-[#D4A64A] mt-0.5 flex-shrink-0" />
                     <span>{b.address}</span>
                   </div>
                   <div className="flex items-center gap-2.5">
-                    <Mail size={16} className="text-[#BFA078] flex-shrink-0" />
-                    <a href={`mailto:${b.email}`} className="hover:text-[#D6B45C] transition-colors">
+                    <Mail size={16} className="text-[#D4A64A] flex-shrink-0" />
+                    <a href={`mailto:${b.email}`} className="hover:text-[#FFF0A6] transition-colors">
                       {b.email}
                     </a>
                   </div>
                   <div className="flex items-center gap-2.5 font-medium">
-                    <Phone size={16} className="text-[#BFA078] flex-shrink-0" />
-                    <a href={`tel:${b.phone.replace(/\s+/g, '')}`} className="hover:text-[#D6B45C] transition-colors">
+                    <Phone size={16} className="text-[#D4A64A] flex-shrink-0" />
+                    <a href={`tel:${b.phone.replace(/\s+/g, '')}`} className="hover:text-[#FFF0A6] transition-colors">
                       {b.phone}
                     </a>
                   </div>
-                  <div className="flex items-center gap-2.5 text-[11px] text-[#F6F0E7]/65 pt-1 border-t border-[#BFA078]/20">
-                    <Clock size={14} className="text-[#BFA078] flex-shrink-0" />
+                  <div className="flex items-center gap-2.5 text-[11px] text-[#F7F3EC]/65 pt-1 border-t border-[#D4A64A]/20">
+                    <Clock size={14} className="text-[#D4A64A] flex-shrink-0" />
                     <span>{b.hours}</span>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                 <div className="pt-6 text-center">
                   <button
                     onClick={onOpenBooking}
-                    className="w-full py-2.5 px-4 rounded-full bg-gradient-to-r from-[#BFA078] to-[#D6B45C] hover:opacity-90 text-[#050505] text-xs font-bold tracking-wide transition-opacity cursor-pointer shadow-sm"
+                    className="w-full py-2.5 px-4 rounded-full bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] hover:opacity-90 text-[#000000] text-xs font-bold tracking-wide transition-opacity cursor-pointer shadow-sm"
                   >
                     Reserve Here →
                   </button>
@@ -183,7 +183,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                 size={160}
                 className="opacity-75"
               />
-              <div className="absolute inset-0 flex items-center justify-center text-[#D6B45C]">
+              <div className="absolute inset-0 flex items-center justify-center text-[#FFF0A6]">
                 <ArrowDown size={28} strokeWidth={1.5} className="animate-bounce" />
               </div>
             </div>
@@ -192,7 +192,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 3. GET IN TOUCH WITH US SPLIT SECTION */}
-      <section className="w-full bg-[#0C0B0A] py-16 lg:py-24 border-t border-[#352B20]">
+      <section className="w-full bg-[#0A0A0A] py-16 lg:py-24 border-t border-[#2C2114]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
@@ -201,7 +201,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
               <TiltCard
                 maxTilt={5}
                 scale={1.01}
-                className="rounded-[32px] overflow-hidden shadow-2xl aspect-[4/5] bg-[#111] border border-[#BFA078]/35"
+                className="rounded-[32px] overflow-hidden shadow-2xl aspect-[4/5] bg-[#111] border border-[#D4A64A]/35"
               >
                 <ImageWithFallback
                   src={IMAGES.contactOilPour}
@@ -215,25 +215,25 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
             </div>
 
             {/* Right Form Card */}
-            <div data-motion-reveal className="lg:col-span-6 bg-[#181614] rounded-[32px] p-8 sm:p-12 border border-[#352B20] shadow-sm">
+            <div data-motion-reveal className="lg:col-span-6 bg-[#111111] rounded-[32px] p-8 sm:p-12 border border-[#2C2114] shadow-sm">
               <div className="mb-8">
-                <h2 className="font-serif text-3xl sm:text-4xl text-[#BFA078] font-bold">
+                <h2 className="font-serif text-3xl sm:text-4xl text-[#D4A64A] font-bold">
                   Get in touch with us
                 </h2>
-                <p className="text-xs sm:text-sm text-[#F6F0E7]/70 mt-2">
+                <p className="text-xs sm:text-sm text-[#F7F3EC]/70 mt-2">
                   Leave a note and our front-desk concierge will connect with you.
                 </p>
               </div>
 
               {submitted ? (
                 <div data-motion-reveal className="text-center py-10 space-y-3">
-                  <span className="w-12 h-12 rounded-full bg-[#BFA078]/15 text-[#D6B45C] inline-flex items-center justify-center">
+                  <span className="w-12 h-12 rounded-full bg-[#D4A64A]/15 text-[#FFF0A6] inline-flex items-center justify-center">
                     <Check size={24} />
                   </span>
-                  <h3 className="font-serif text-2xl font-bold text-[#BFA078]">
+                  <h3 className="font-serif text-2xl font-bold text-[#D4A64A]">
                     Message Saved Locally
                   </h3>
-                  <p className="text-sm text-[#F6F0E7]/75 max-w-sm mx-auto">
+                  <p className="text-sm text-[#F7F3EC]/75 max-w-sm mx-auto">
                     Thank you {name}. Your inquiry has been recorded in the local store.
                   </p>
                   <button
@@ -252,7 +252,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
-                    <label className="block text-xs uppercase tracking-wider text-[#F6F0E7]/70 mb-1.5 font-medium">
+                    <label className="block text-xs uppercase tracking-wider text-[#F7F3EC]/70 mb-1.5 font-medium">
                       Your Full Name *
                     </label>
                     <input
@@ -267,7 +267,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs uppercase tracking-wider text-[#F6F0E7]/70 mb-1.5 font-medium">
+                      <label className="block text-xs uppercase tracking-wider text-[#F7F3EC]/70 mb-1.5 font-medium">
                         Phone Number *
                       </label>
                       <input
@@ -280,7 +280,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs uppercase tracking-wider text-[#F6F0E7]/70 mb-1.5 font-medium">
+                      <label className="block text-xs uppercase tracking-wider text-[#F7F3EC]/70 mb-1.5 font-medium">
                         Email Address
                       </label>
                       <input
@@ -295,7 +295,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs uppercase tracking-wider text-[#F6F0E7]/70 mb-1.5 font-medium">
+                      <label className="block text-xs uppercase tracking-wider text-[#F7F3EC]/70 mb-1.5 font-medium">
                         Preferred Branch
                       </label>
                       <select
@@ -311,7 +311,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-xs uppercase tracking-wider text-[#F6F0E7]/70 mb-1.5 font-medium">
+                      <label className="block text-xs uppercase tracking-wider text-[#F7F3EC]/70 mb-1.5 font-medium">
                         Ritual of Interest
                       </label>
                       <select
@@ -330,7 +330,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                   </div>
 
                   <div>
-                    <label className="block text-xs uppercase tracking-wider text-[#F6F0E7]/70 mb-1.5 font-medium">
+                    <label className="block text-xs uppercase tracking-wider text-[#F7F3EC]/70 mb-1.5 font-medium">
                       Special Requests / Notes
                     </label>
                     <textarea

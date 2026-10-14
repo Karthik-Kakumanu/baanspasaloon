@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
   return (
     <>
       {/* Top Announcement Bar */}
-      <div className="announcement site-announcement min-h-[34px] bg-[#0C0B0A] text-[#F6F0E7] text-xs py-2 px-4 text-center font-normal tracking-wide flex items-center justify-center gap-2 leading-tight">
+      <div className="announcement site-announcement min-h-[34px] bg-[#0A0A0A] text-[#F7F3EC] text-xs py-2 px-4 text-center font-normal tracking-wide flex items-center justify-center gap-2 leading-tight">
         <Sparkles size={13} className="text-[#D4A95B]" />
         <span>{BUSINESS_SETTINGS.announcement}</span>
         <span className="hidden sm:inline opacity-40">·</span>
@@ -66,8 +66,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
       <header
         className={`site-header ${isScrolled ? 'is-scrolled' : ''} sticky top-0 z-50 w-full border-b transition-all duration-300 ${
           isScrolled
-          ? 'bg-[#050505]/95 backdrop-blur-md shadow-sm py-2'
-          : 'bg-[#050505] py-3 lg:py-4'
+          ? 'bg-[#000000]/95 backdrop-blur-md shadow-sm py-2'
+          : 'bg-[#000000] py-3 lg:py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -82,13 +82,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                     to={item.path}
                     className={`nav-item text-[15px] font-medium tracking-wide transition-all duration-300 relative py-1 group ${
                       isActive
-                        ? 'active text-[#D6B45C] font-semibold'
-                        : 'text-[#F6F0E7] hover:text-[#BFA078]'
+                        ? 'active text-[#FFF0A6] font-semibold'
+                        : 'text-[#F7F3EC] hover:text-[#D4A64A]'
                     }`}
                   >
                     <span>{item.label}</span>
                     <span
-                      className={`absolute -bottom-1.5 left-0 right-0 h-[2px] bg-gradient-to-r from-[#BFA078] to-[#D6B45C] rounded-full transition-all duration-300 origin-left ${
+                      className={`absolute -bottom-1.5 left-0 right-0 h-[2px] bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] rounded-full transition-all duration-300 origin-left ${
                         isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100'
                       }`}
                     />
@@ -111,7 +111,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                     const parent = target.parentElement;
                     if (parent && !parent.querySelector('.logo-fallback')) {
                       const fb = document.createElement('div');
-                      fb.className = 'logo-fallback font-serif text-2xl font-bold tracking-widest text-[#BFA078] text-center';
+                      fb.className = 'logo-fallback font-serif text-2xl font-bold tracking-widest text-[#D4A64A] text-center';
                       fb.innerHTML = 'BAAN<br/><span class="text-[10px] tracking-normal font-sans font-normal uppercase">Salon · Beauty · Spa</span>';
                       parent.appendChild(fb);
                     }
@@ -130,13 +130,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                     to={item.path}
                     className={`nav-item text-[15px] font-medium tracking-wide transition-all duration-300 relative py-1 group ${
                       isActive
-                        ? 'active text-[#D6B45C] font-semibold'
-                        : 'text-[#F6F0E7] hover:text-[#BFA078]'
+                        ? 'active text-[#FFF0A6] font-semibold'
+                        : 'text-[#F7F3EC] hover:text-[#D4A64A]'
                     }`}
                   >
                     <span>{item.label}</span>
                     <span
-                      className={`absolute -bottom-1.5 left-0 right-0 h-[2px] bg-gradient-to-r from-[#BFA078] to-[#D6B45C] rounded-full transition-all duration-300 origin-left ${
+                      className={`absolute -bottom-1.5 left-0 right-0 h-[2px] bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] rounded-full transition-all duration-300 origin-left ${
                         isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100'
                       }`}
                     />
@@ -162,7 +162,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
               <button
                 type="button"
                 onClick={() => setOpenMenuPath(isOpen ? null : location.pathname)}
-                className="menu-button p-2 rounded-lg text-[#F6F0E7] hover:bg-[#181614] transition-colors focus:outline-none"
+                className="menu-button p-2 rounded-lg text-[#F7F3EC] hover:bg-[#111111] transition-colors focus:outline-none"
                 aria-label="Toggle navigation menu"
                 aria-expanded={isOpen}
                 aria-controls="baan-mobile-navigation"
@@ -176,7 +176,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
         {/* Mobile Slide-out Drawer */}
         <div
           id="baan-mobile-navigation"
-          className={`mobile-menu-panel lg:hidden fixed inset-x-0 top-[100%] bg-[#181614] border-t border-[#352B20] shadow-xl py-6 px-6 max-h-[85vh] overflow-y-auto ${isOpen ? 'is-open' : ''}`}
+          className={`mobile-menu-panel lg:hidden fixed inset-x-0 top-[100%] bg-[#111111] border-t border-[#2C2114] shadow-xl py-6 px-6 max-h-[85vh] overflow-y-auto ${isOpen ? 'is-open' : ''}`}
           inert={!isOpen}
         >
             <nav className="flex flex-col space-y-4">
@@ -186,8 +186,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                   to={item.path}
                   className={`text-lg font-medium py-2 px-3 rounded-lg transition-colors ${
                     location.pathname === item.path
-                      ? 'bg-[#352B20] text-[#BFA078] font-semibold'
-                      : 'text-[#F6F0E7] hover:bg-[#352B20]/50'
+                      ? 'bg-[#2C2114] text-[#D4A64A] font-semibold'
+                      : 'text-[#F7F3EC] hover:bg-[#2C2114]/50'
                   }`}
                   onClick={() => setOpenMenuPath(null)}
                 >
@@ -195,18 +195,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                 </Link>
               ))}
 
-              <div className="pt-4 border-t border-[#352B20]/80 flex flex-col gap-3">
+              <div className="pt-4 border-t border-[#2C2114]/80 flex flex-col gap-3">
                 <button
                   onClick={() => {
                     setOpenMenuPath(null);
                     onOpenBooking?.();
                   }}
-                  className="btn-bali w-full justify-center bg-[#BFA078] text-[#050505] hover:bg-[#D6B45C]"
+                  className="btn-bali w-full justify-center bg-[#D4A64A] text-[#000000] hover:bg-[#FFF0A6]"
                 >
                   <span>Book Your Escape</span>
                   <span className="text-lg">────→</span>
                 </button>
-                <div className="text-center text-xs text-[#F6F0E7]/75 pt-2">
+                <div className="text-center text-xs text-[#F7F3EC]/75 pt-2">
                   <p className="font-medium">{BUSINESS_SETTINGS.headerPhone ?? BUSINESS_SETTINGS.phone}</p>
                   <p>{BUSINESS_SETTINGS.hours}</p>
                 </div>

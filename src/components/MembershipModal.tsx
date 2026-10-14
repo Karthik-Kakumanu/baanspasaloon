@@ -59,10 +59,10 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
       role="dialog"
       aria-modal="true"
     >
-      <div className="baan-booking-modal relative w-full max-w-lg bg-[#181614] text-[#F6F0E7] rounded-3xl border border-[#352B20] shadow-2xl p-6 sm:p-8 max-h-[92vh] overflow-y-auto">
+      <div className="baan-booking-modal relative w-full max-w-lg bg-[#111111] text-[#F7F3EC] rounded-3xl border border-[#2C2114] shadow-2xl p-6 sm:p-8 max-h-[92vh] overflow-y-auto">
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 w-9 h-9 rounded-full bg-[#0C0B0A] text-[#F6F0E7] hover:bg-[#BFA078] hover:text-[#050505] border border-[#352B20] transition-colors flex items-center justify-center cursor-pointer"
+          className="absolute top-5 right-5 w-9 h-9 rounded-full bg-[#0A0A0A] text-[#F7F3EC] hover:bg-[#D4A64A] hover:text-[#000000] border border-[#2C2114] transition-colors flex items-center justify-center cursor-pointer"
           aria-label="Close modal"
         >
           <X size={18} />
@@ -70,20 +70,20 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
 
         {submitted ? (
           <div className="text-center py-6">
-            <div className="w-16 h-16 rounded-full bg-[#BFA078]/20 text-[#D6B45C] mx-auto flex items-center justify-center mb-4 border border-[#D6B45C]/40">
+            <div className="w-16 h-16 rounded-full bg-[#D4A64A]/20 text-[#FFF0A6] mx-auto flex items-center justify-center mb-4 border border-[#FFF0A6]/40">
               <Check size={32} />
             </div>
-            <span className="text-xs font-semibold tracking-widest text-[#D6B45C] uppercase">
+            <span className="text-xs font-semibold tracking-widest text-[#FFF0A6] uppercase">
               Membership Request Logged
             </span>
-            <h3 className="font-serif text-2xl text-[#BFA078] font-bold mt-2">
+            <h3 className="font-serif text-2xl text-[#D4A64A] font-bold mt-2">
               Welcome to the BAAN Circle
             </h3>
-            <p className="text-sm text-[#F6F0E7]/80 mt-2 max-w-md mx-auto leading-relaxed">
-              Thank you {name}, your expression of interest in the <strong className="text-[#D6B45C]">{tier.name} ({tier.price})</strong> package has been recorded in the local demo database.
+            <p className="text-sm text-[#F7F3EC]/80 mt-2 max-w-md mx-auto leading-relaxed">
+              Thank you {name}, your expression of interest in the <strong className="text-[#FFF0A6]">{tier.name} ({tier.price})</strong> package has been recorded in the local demo database.
             </p>
-            <div className="mt-5 p-4 rounded-xl bg-[#0C0B0A] border border-[#352B20] text-xs text-[#F6F0E7]/70 text-left">
-              <p className="font-medium text-[#D6B45C] mb-1">
+            <div className="mt-5 p-4 rounded-xl bg-[#0A0A0A] border border-[#2C2114] text-xs text-[#F7F3EC]/70 text-left">
+              <p className="font-medium text-[#FFF0A6] mb-1">
                 ℹ️ Demonstration Mode:
               </p>
               <p>
@@ -93,7 +93,7 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
             <div className="mt-6">
               <button
                 onClick={handleDone}
-                className="btn-bali bg-[#BFA078] text-[#050505] hover:bg-[#D6B45C]"
+                className="btn-bali bg-[#D4A64A] text-[#000000] hover:bg-[#FFF0A6]"
               >
                 <span>Close</span>
                 <span>────→</span>
@@ -103,33 +103,33 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
         ) : (
           <div>
             <div className="mb-6">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0C0B0A] text-[#D6B45C] text-xs font-semibold mb-2 border border-[#BFA078]/30">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0A0A0A] text-[#FFF0A6] text-xs font-semibold mb-2 border border-[#D4A64A]/30">
                 <Award size={13} />
                 {tier.bbh} · {tier.price}
               </div>
-              <h2 className="font-serif text-2xl sm:text-3xl text-[#BFA078] font-bold">
+              <h2 className="font-serif text-2xl sm:text-3xl text-[#D4A64A] font-bold">
                 {tier.name}
               </h2>
-              <p className="text-sm text-[#F6F0E7]/75 mt-1">
+              <p className="text-sm text-[#F7F3EC]/75 mt-1">
                 {tier.subtitle}
               </p>
             </div>
 
-            <div className="p-4 rounded-2xl bg-[#0C0B0A] border border-[#352B20] mb-5 space-y-2 text-xs">
-              <div className="flex justify-between text-[#D6B45C] font-semibold border-b border-[#352B20] pb-2">
+            <div className="p-4 rounded-2xl bg-[#0A0A0A] border border-[#2C2114] mb-5 space-y-2 text-xs">
+              <div className="flex justify-between text-[#FFF0A6] font-semibold border-b border-[#2C2114] pb-2">
                 <span>Total BAAN Hours:</span>
                 <span>{tier.bbhCount} Hours</span>
               </div>
-              <div className="flex justify-between text-[#F6F0E7]/80">
+              <div className="flex justify-between text-[#F7F3EC]/80">
                 <span>Effective Rate:</span>
-                <span className="text-[#D6B45C]">{tier.perSessionCost} / session</span>
+                <span className="text-[#FFF0A6]">{tier.perSessionCost} / session</span>
               </div>
-              <div className="flex justify-between text-[#F6F0E7]/80">
+              <div className="flex justify-between text-[#F7F3EC]/80">
                 <span>Validity:</span>
                 <span>{tier.validityMonths} Months</span>
               </div>
-              <div className="pt-2 text-[#F6F0E7]/70">
-                <strong className="block text-[#D6B45C] mb-1">Included Privileges:</strong>
+              <div className="pt-2 text-[#F7F3EC]/70">
+                <strong className="block text-[#FFF0A6] mb-1">Included Privileges:</strong>
                 <ul className="list-disc list-inside space-y-1">
                   {tier.discounts.map((d, i) => (
                     <li key={i}>{d}</li>
@@ -140,7 +140,7 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs font-medium text-[#F6F0E7]/70 uppercase tracking-wider mb-1">
+                <label className="block text-xs font-medium text-[#F7F3EC]/70 uppercase tracking-wider mb-1">
                   Full Name *
                 </label>
                 <input
@@ -155,7 +155,7 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/70 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/70 uppercase tracking-wider mb-1">
                     Phone *
                   </label>
                   <input
@@ -168,7 +168,7 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/70 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/70 uppercase tracking-wider mb-1">
                     Email
                   </label>
                   <input
@@ -182,7 +182,7 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-[#F6F0E7]/70 uppercase tracking-wider mb-1">
+                <label className="block text-xs font-medium text-[#F7F3EC]/70 uppercase tracking-wider mb-1">
                   Home Branch *
                 </label>
                 <select
@@ -201,12 +201,12 @@ export const MembershipModal: React.FC<MembershipModalProps> = ({
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="btn-bali w-full justify-center bg-gradient-to-r from-[#BFA078] via-[#D6B45C] to-[#BFA078] text-[#050505] font-bold py-3 text-base shadow-md cursor-pointer hover:opacity-95"
+                  className="btn-bali w-full justify-center bg-gradient-to-r from-[#D4A64A] via-[#FFF0A6] to-[#D4A64A] text-[#000000] font-bold py-3 text-base shadow-md cursor-pointer hover:opacity-95"
                 >
                   <span>Submit Membership Enquiry</span>
                   <span className="text-lg">────→</span>
                 </button>
-                <p className="text-[11px] text-center text-[#F6F0E7]/60 mt-2">
+                <p className="text-[11px] text-center text-[#F7F3EC]/60 mt-2">
                   No payment collected · Demonstration request recorded locally.
                 </p>
               </div>

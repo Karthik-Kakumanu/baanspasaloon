@@ -17,7 +17,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
   return (
     <div className="page-about w-full">
       {/* 1. About hero */}
-      <section className="relative w-full bg-[#050505] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#352B20] overflow-hidden">
+      <section className="relative w-full bg-[#000000] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#2C2114] overflow-hidden">
         <Hero3DCanvas className="opacity-80" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -25,15 +25,15 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
             {/* Left Copy */}
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2">
-                <span className="w-6 h-[1px] bg-[#D6B45C]" />
-                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#D6B45C] uppercase">
+                <span className="w-6 h-[1px] bg-[#FFF0A6]" />
+                <span className="text-[11px] font-semibold tracking-[0.25em] text-[#FFF0A6] uppercase">
                   OUR ESSENCE & HERITAGE
                 </span>
               </div>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#BFA078] font-bold uppercase tracking-tight">
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#D4A64A] font-bold uppercase tracking-tight">
                 About Us
               </h1>
-              <p className="text-base text-[#F6F0E7]/85 max-w-sm leading-relaxed">
+              <p className="text-base text-[#F7F3EC]/85 max-w-sm leading-relaxed">
                 A peaceful haven dedicated to restorative wellness, mindful beauty, and unhurried luxury across hair, skin and body care.
               </p>
               <div className="pt-2">
@@ -57,7 +57,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               <TiltCard
                 maxTilt={6}
                 scale={1.015}
-                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#BFA078]/40 bg-[#181614]"
+                className="relative w-full max-w-xl aspect-[16/10] sm:aspect-[16/9] rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl border border-[#D4A64A]/40 bg-[#111111]"
               >
                 <ImageWithFallback
                   src={IMAGES.aboutHero}
@@ -73,17 +73,17 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 2. PHILOSOPHY INTRODUCTION SECTION */}
-      <section className="about-story-light w-full bg-[#F6F0E7] py-16 lg:py-24">
+      <section className="about-story-light w-full bg-[#F7F3EC] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-6 text-center">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#977344] block">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#8C5A1E] block">
               The BAAN Ethos
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#050505] font-bold">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#000000] font-bold">
               Mindful Luxury, Tailored For You
             </h2>
             <GoldDivider />
-            <p className="text-base sm:text-lg text-[#352B20] leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-[#2C2114] leading-relaxed max-w-3xl mx-auto">
               BAAN B is a full-service salon, spa and bridal destination where warm hospitality meets personalized beauty care. From expert styling and hair colour to restorative spa rituals and bridal preparation, every visit is designed to help you feel comfortable, confident and cared for.
             </p>
           </div>
@@ -91,14 +91,14 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 4. 3-COLUMN VERTICAL PHOTO GALLERY STRIP (With 3D Tilt) */}
-      <section className="w-full bg-[#181614] py-16 lg:py-24 border-y border-[#352B20]">
+      <section className="w-full bg-[#111111] py-16 lg:py-24 border-y border-[#2C2114]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div data-motion-stagger className="compact-card-grid grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             <TiltCard
               maxTilt={7}
               scale={1.02}
               glare={true}
-              className="rounded-[28px] overflow-hidden shadow-xl aspect-[3/4] bg-[#0C0B0A] border border-[#352B20]"
+              className="rounded-[28px] overflow-hidden shadow-xl aspect-[3/4] bg-[#0A0A0A] border border-[#2C2114]"
             >
               <ImageWithFallback
                 src={IMAGES.aboutTrio1}
@@ -113,7 +113,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               maxTilt={7}
               scale={1.02}
               glare={true}
-              className="rounded-[28px] overflow-hidden shadow-xl aspect-[3/4] bg-[#0C0B0A] border border-[#352B20]"
+              className="rounded-[28px] overflow-hidden shadow-xl aspect-[3/4] bg-[#0A0A0A] border border-[#2C2114]"
             >
               <ImageWithFallback
                 src={IMAGES.aboutTrio2}
@@ -128,7 +128,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               maxTilt={7}
               scale={1.02}
               glare={true}
-              className="rounded-[28px] overflow-hidden shadow-xl aspect-[3/4] bg-[#0C0B0A] border border-[#352B20]"
+              className="rounded-[28px] overflow-hidden shadow-xl aspect-[3/4] bg-[#0A0A0A] border border-[#2C2114]"
             >
               <ImageWithFallback
                 src={IMAGES.aboutTrio3}
@@ -144,7 +144,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 5. VISION & MISSION SECTION (With 3D Tilt Cards) */}
-      <section className="w-full bg-[#050505] py-16 lg:py-24 border-b border-[#352B20]">
+      <section className="w-full bg-[#000000] py-16 lg:py-24 border-b border-[#2C2114]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             
@@ -153,15 +153,15 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               maxTilt={6}
               scale={1.02}
               glare={true}
-              className="bg-[#0C0B0A] rounded-[32px] p-8 sm:p-12 space-y-4 shadow-xl border border-[#352B20]"
+              className="bg-[#0A0A0A] rounded-[32px] p-8 sm:p-12 space-y-4 shadow-xl border border-[#2C2114]"
             >
-              <div className="w-14 h-14 rounded-full bg-[#181614] text-[#D6B45C] flex items-center justify-center border border-[#BFA078]/30">
+              <div className="w-14 h-14 rounded-full bg-[#111111] text-[#FFF0A6] flex items-center justify-center border border-[#D4A64A]/30">
                 <Eye size={24} />
               </div>
-              <h3 className="font-serif text-3xl font-bold text-[#BFA078]">
+              <h3 className="font-serif text-3xl font-bold text-[#D4A64A]">
                 Our Vision
               </h3>
-              <p className="text-sm sm:text-base text-[#F6F0E7]/85 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F7F3EC]/85 leading-relaxed">
                 To be the pinnacle destination for authentic holistic wellness, couture hair design and bridal artistry, harmonizing timeless Balinese techniques with contemporary luxury.
               </p>
             </TiltCard>
@@ -171,15 +171,15 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               maxTilt={6}
               scale={1.02}
               glare={true}
-              className="bg-[#0C0B0A] rounded-[32px] p-8 sm:p-12 space-y-4 shadow-xl border border-[#352B20]"
+              className="bg-[#0A0A0A] rounded-[32px] p-8 sm:p-12 space-y-4 shadow-xl border border-[#2C2114]"
             >
-              <div className="w-14 h-14 rounded-full bg-[#181614] text-[#D6B45C] flex items-center justify-center border border-[#BFA078]/30">
+              <div className="w-14 h-14 rounded-full bg-[#111111] text-[#FFF0A6] flex items-center justify-center border border-[#D4A64A]/30">
                 <Target size={24} />
               </div>
-              <h3 className="font-serif text-3xl font-bold text-[#BFA078]">
+              <h3 className="font-serif text-3xl font-bold text-[#D4A64A]">
                 Our Mission
               </h3>
-              <p className="text-sm sm:text-base text-[#F6F0E7]/85 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F7F3EC]/85 leading-relaxed">
                 To deliver bespoke therapeutic experiences, meticulous hygiene and empathetic service across all our salons and spas, leaving every guest revitalized in spirit and body.
               </p>
             </TiltCard>
@@ -189,12 +189,12 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 6. BAAN MEDIA SHOWCASE */}
-      <section className="w-full bg-[#181614] py-16 lg:py-24">
+      <section className="w-full bg-[#111111] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <TiltCard
             maxTilt={4}
             scale={1.01}
-            className="relative rounded-[32px] overflow-hidden shadow-2xl aspect-[16/9] sm:aspect-[21/9] bg-[#050505] border border-[#BFA078]/30 group"
+            className="relative rounded-[32px] overflow-hidden shadow-2xl aspect-[16/9] sm:aspect-[21/9] bg-[#000000] border border-[#D4A64A]/30 group"
           >
             <ImageWithFallback
               src={IMAGES.aboutVideoPoster}
@@ -205,11 +205,11 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               fallbackText="A BAAN spa atmosphere"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30 flex flex-col items-center justify-center text-center p-6 text-white">
-              <div className="w-12 h-px bg-[#D6B45C] mb-4" aria-hidden="true" />
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#BFA078]">
+              <div className="w-12 h-px bg-[#FFF0A6] mb-4" aria-hidden="true" />
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#D4A64A]">
                 A Glimpse Inside BAAN
               </h3>
-              <p className="text-xs sm:text-sm text-[#F6F0E7]/85 mt-2 max-w-md">
+              <p className="text-xs sm:text-sm text-[#F7F3EC]/85 mt-2 max-w-md">
                 Gentle bamboo melodies, cold-pressed botanical oils, and private hydrotherapy suites.
               </p>
             </div>
@@ -218,17 +218,17 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
       </section>
 
       {/* 7. MEMBERSHIP PROMOTIONAL BANNER */}
-      <section className="w-full bg-[#050505] py-14 lg:py-20 border-y border-[#352B20]">
+      <section className="w-full bg-[#000000] py-14 lg:py-20 border-y border-[#2C2114]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#D6B45C]">
+              <span className="text-xs font-semibold uppercase tracking-widest text-[#FFF0A6]">
                 Join The Circle
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#BFA078] font-bold mt-1">
+              <h2 className="font-serif text-3xl sm:text-4xl text-[#D4A64A] font-bold mt-1">
                 Membership Privileges
               </h2>
-              <p className="text-sm text-[#F6F0E7]/80 mt-1 max-w-lg">
+              <p className="text-sm text-[#F7F3EC]/80 mt-1 max-w-lg">
                 Enjoy preferential pricing, prepaid hours, and bespoke privileges across all BAAN locations in Hyderabad.
               </p>
             </div>

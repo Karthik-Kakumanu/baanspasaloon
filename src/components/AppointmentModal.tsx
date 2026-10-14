@@ -103,10 +103,10 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
       role="dialog"
       aria-modal="true"
     >
-      <div className="baan-booking-modal relative w-full max-w-xl bg-[#181614] text-[#F6F0E7] rounded-3xl border border-[#352B20] shadow-2xl overflow-hidden p-6 sm:p-8 max-h-[92vh] overflow-y-auto">
+      <div className="baan-booking-modal relative w-full max-w-xl bg-[#111111] text-[#F7F3EC] rounded-3xl border border-[#2C2114] shadow-2xl overflow-hidden p-6 sm:p-8 max-h-[92vh] overflow-y-auto">
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 w-9 h-9 rounded-full bg-[#0C0B0A] text-[#F6F0E7] hover:bg-[#BFA078] hover:text-[#050505] border border-[#352B20] transition-colors flex items-center justify-center cursor-pointer"
+          className="absolute top-5 right-5 w-9 h-9 rounded-full bg-[#0A0A0A] text-[#F7F3EC] hover:bg-[#D4A64A] hover:text-[#000000] border border-[#2C2114] transition-colors flex items-center justify-center cursor-pointer"
           aria-label="Close booking modal"
         >
           <X size={18} />
@@ -114,21 +114,21 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
         {submitted ? (
           <div className="text-center py-6">
-            <div className="w-16 h-16 rounded-full bg-[#BFA078]/20 text-[#D6B45C] mx-auto flex items-center justify-center mb-4 border border-[#D6B45C]/40">
+            <div className="w-16 h-16 rounded-full bg-[#D4A64A]/20 text-[#FFF0A6] mx-auto flex items-center justify-center mb-4 border border-[#FFF0A6]/40">
               <Check size={32} />
             </div>
-            <span className="text-xs font-semibold tracking-widest text-[#D6B45C] uppercase">
+            <span className="text-xs font-semibold tracking-widest text-[#FFF0A6] uppercase">
               Demonstration Booking Saved
             </span>
-            <h3 className="font-serif text-2xl text-[#BFA078] font-bold mt-2">
+            <h3 className="font-serif text-2xl text-[#D4A64A] font-bold mt-2">
               Thank You, {submitted.name}
             </h3>
-            <p className="text-sm text-[#F6F0E7]/80 mt-2 max-w-md mx-auto leading-relaxed">
-              Your request for <strong className="text-[#D6B45C]">{submitted.serviceName}</strong> on <strong>{submitted.date}</strong> at <strong>{submitted.time}</strong> at our <strong>{submitted.location}</strong> branch has been saved locally.
+            <p className="text-sm text-[#F7F3EC]/80 mt-2 max-w-md mx-auto leading-relaxed">
+              Your request for <strong className="text-[#FFF0A6]">{submitted.serviceName}</strong> on <strong>{submitted.date}</strong> at <strong>{submitted.time}</strong> at our <strong>{submitted.location}</strong> branch has been saved locally.
             </p>
 
-            <div className="mt-5 p-4 rounded-xl bg-[#0C0B0A] border border-[#352B20] text-xs text-[#F6F0E7]/70 text-left">
-              <p className="font-medium text-[#D6B45C] mb-1">
+            <div className="mt-5 p-4 rounded-xl bg-[#0A0A0A] border border-[#2C2114] text-xs text-[#F7F3EC]/70 text-left">
+              <p className="font-medium text-[#FFF0A6] mb-1">
                 ℹ️ Demonstration Mode Note:
               </p>
               <p>
@@ -139,7 +139,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <button
                 onClick={handleReset}
-                className="btn-bali bg-[#BFA078] text-[#050505] hover:bg-[#D6B45C]"
+                className="btn-bali bg-[#D4A64A] text-[#000000] hover:bg-[#FFF0A6]"
               >
                 <span>Done</span>
                 <span>────→</span>
@@ -149,14 +149,14 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
         ) : (
           <div>
             <div className="mb-6">
-              <span className="text-xs font-semibold tracking-widest text-[#D6B45C] uppercase flex items-center gap-1.5">
-                <Sparkles size={13} className="text-[#D6B45C]" />
+              <span className="text-xs font-semibold tracking-widest text-[#FFF0A6] uppercase flex items-center gap-1.5">
+                <Sparkles size={13} className="text-[#FFF0A6]" />
                 BAAN Private Appointment
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl text-[#BFA078] font-bold mt-1">
+              <h2 className="font-serif text-2xl sm:text-3xl text-[#D4A64A] font-bold mt-1">
                 Reserve Your Escape
               </h2>
-              <p className="text-sm text-[#F6F0E7]/75 mt-1">
+              <p className="text-sm text-[#F7F3EC]/75 mt-1">
                 Share your preferred details. Your booking will be saved locally for demonstration.
               </p>
             </div>
@@ -164,7 +164,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                     Your Full Name *
                   </label>
                   <input
@@ -177,7 +177,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                     Phone Number *
                   </label>
                   <input
@@ -192,7 +192,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                   Email Address <span className="text-gray-400 font-normal">(Optional)</span>
                 </label>
                 <input
@@ -206,7 +206,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                     Selected Ritual *
                   </label>
                   <select
@@ -222,7 +222,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                   </select>
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                     BAAN Location *
                   </label>
                   <select
@@ -241,7 +241,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                     Preferred Date *
                   </label>
                   <input
@@ -254,7 +254,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                  <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                     Time Slot *
                   </label>
                   <select
@@ -272,7 +272,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-[#F6F0E7]/80 uppercase tracking-wider mb-1">
+                <label className="block text-xs font-medium text-[#F7F3EC]/80 uppercase tracking-wider mb-1">
                   Special Notes or Health Preferences <span className="text-gray-400 font-normal">(Optional)</span>
                 </label>
                 <textarea
@@ -289,7 +289,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="btn-bali w-full justify-center bg-gradient-to-r from-[#BFA078] via-[#D6B45C] to-[#BFA078] text-[#050505] font-bold py-3 text-base shadow-md cursor-pointer hover:opacity-95"
+                  className="btn-bali w-full justify-center bg-gradient-to-r from-[#D4A64A] via-[#FFF0A6] to-[#D4A64A] text-[#000000] font-bold py-3 text-base shadow-md cursor-pointer hover:opacity-95"
                 >
                   <span>Confirm Appointment Request</span>
                   <span className="text-lg">────→</span>

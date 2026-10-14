@@ -78,11 +78,11 @@ export const QuickBookingBar: React.FC<QuickBookingBarProps> = ({
   };
 
   return (
-    <div className={`quick-booking-bar w-full bg-[#181614] border-y border-[#352B20] py-4 px-4 sm:px-6 lg:px-8 shadow-sm ${className}`}>
+    <div className={`quick-booking-bar w-full bg-[#111111] border-y border-[#2C2114] py-4 px-4 sm:px-6 lg:px-8 shadow-sm ${className}`}>
       <div className="max-w-7xl mx-auto">
         {submitted ? (
-          <div className="flex items-center justify-center gap-3 text-[#F6F0E7] py-2 animate-fadeIn">
-            <span className="w-7 h-7 rounded-full bg-[#BFA078] text-[#050505] flex items-center justify-center">
+          <div className="flex items-center justify-center gap-3 text-[#F7F3EC] py-2 animate-fadeIn">
+            <span className="w-7 h-7 rounded-full bg-[#D4A64A] text-[#000000] flex items-center justify-center">
               <Check size={16} />
             </span>
             <p className="text-sm md:text-base font-medium">
@@ -99,7 +99,7 @@ export const QuickBookingBar: React.FC<QuickBookingBarProps> = ({
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full bg-transparent border-b border-[#BFA078] text-[#F6F0E7] placeholder-[#B9AD9D] text-sm py-2 px-1 focus:outline-none focus:border-[#BFA078] transition-colors"
+                className="w-full bg-transparent border-b border-[#D4A64A] text-[#F7F3EC] placeholder-[#B9AD9D] text-sm py-2 px-1 focus:outline-none focus:border-[#D4A64A] transition-colors"
                 aria-label="Your Name"
               />
             </div>
@@ -112,7 +112,7 @@ export const QuickBookingBar: React.FC<QuickBookingBarProps> = ({
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 required
-                className="w-full bg-transparent border-b border-[#BFA078] text-[#F6F0E7] placeholder-[#B9AD9D] text-sm py-2 px-1 focus:outline-none focus:border-[#BFA078] transition-colors"
+                className="w-full bg-transparent border-b border-[#D4A64A] text-[#F7F3EC] placeholder-[#B9AD9D] text-sm py-2 px-1 focus:outline-none focus:border-[#D4A64A] transition-colors"
                 aria-label="Phone Number"
               />
             </div>
@@ -122,7 +122,7 @@ export const QuickBookingBar: React.FC<QuickBookingBarProps> = ({
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full bg-transparent border-b border-[#BFA078] text-[#F6F0E7] text-sm py-2 px-1 focus:outline-none focus:border-[#BFA078] transition-colors cursor-pointer"
+                className="w-full bg-transparent border-b border-[#D4A64A] text-[#F7F3EC] text-sm py-2 px-1 focus:outline-none focus:border-[#D4A64A] transition-colors cursor-pointer"
                 aria-label="Select Treatment"
               >
                 <option value="">Select Service</option>
@@ -139,7 +139,7 @@ export const QuickBookingBar: React.FC<QuickBookingBarProps> = ({
               <select
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
-                className="w-full bg-transparent border-b border-[#BFA078] text-[#F6F0E7] text-sm py-2 px-1 focus:outline-none focus:border-[#BFA078] transition-colors cursor-pointer"
+                className="w-full bg-transparent border-b border-[#D4A64A] text-[#F7F3EC] text-sm py-2 px-1 focus:outline-none focus:border-[#D4A64A] transition-colors cursor-pointer"
                 aria-label="Select Location Branch"
               >
                 <option value="">Select Location</option>
@@ -159,7 +159,7 @@ export const QuickBookingBar: React.FC<QuickBookingBarProps> = ({
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
                 required
-                className="w-full bg-transparent border-b border-[#BFA078] text-[#F6F0E7] text-sm py-2 px-1 focus:outline-none focus:border-[#BFA078] transition-colors cursor-pointer"
+                className="w-full bg-transparent border-b border-[#D4A64A] text-[#F7F3EC] text-sm py-2 px-1 focus:outline-none focus:border-[#D4A64A] transition-colors cursor-pointer"
                 aria-label="Preferred Date"
               />
             </div>
@@ -168,7 +168,7 @@ export const QuickBookingBar: React.FC<QuickBookingBarProps> = ({
             <div className="w-full lg:w-auto flex-shrink-0 pt-2 lg:pt-0">
               <button
                 type="submit"
-                className="w-full lg:w-auto px-7 py-2 rounded-full bg-gradient-to-r from-[#BFA078] to-[#D6B45C] text-[#050505] font-bold hover:opacity-95 transition-all text-sm flex items-center justify-center gap-2 group cursor-pointer shadow-sm"
+                className="w-full lg:w-auto px-7 py-2 rounded-full bg-gradient-to-r from-[#D4A64A] to-[#FFF0A6] text-[#000000] font-bold hover:opacity-95 transition-all text-sm flex items-center justify-center gap-2 group cursor-pointer shadow-sm"
               >
                 <span>Submit</span>
                 <span className="transition-transform group-hover:translate-x-1">────→</span>

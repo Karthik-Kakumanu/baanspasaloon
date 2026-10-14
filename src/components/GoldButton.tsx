@@ -32,11 +32,11 @@ export const GoldButton: React.FC<GoldButtonProps> = ({
 
   const variantClasses = {
     primary:
-      'bg-gradient-to-r from-[#BFA078] via-[#D6B45C] to-[#BFA078] text-[#050505] font-semibold border border-[#D6B45C]/60 shadow-[0_4px_20px_rgba(214,180,92,0.25)] hover:shadow-[0_6px_28px_rgba(214,180,92,0.45)] hover:border-[#D6B45C]',
+      'bg-gradient-to-r from-[#D4A64A] via-[#FFF0A6] to-[#D4A64A] text-[#000000] font-semibold border border-[#FFF0A6]/60 shadow-[0_4px_20px_rgba(214,180,92,0.25)] hover:shadow-[0_6px_28px_rgba(214,180,92,0.45)] hover:border-[#FFF0A6]',
     outline:
-      'bg-transparent text-[#BFA078] font-medium border border-[#BFA078]/70 hover:bg-[#BFA078] hover:text-[#050505] hover:border-[#D6B45C]',
+      'bg-transparent text-[#D4A64A] font-medium border border-[#D4A64A]/70 hover:bg-[#D4A64A] hover:text-[#000000] hover:border-[#FFF0A6]',
     charcoal:
-      'bg-[#181614] text-[#F6F0E7] font-medium border border-[#BFA078]/40 hover:bg-[#BFA078] hover:text-[#050505] hover:border-[#D6B45C]',
+      'bg-[#111111] text-[#F7F3EC] font-medium border border-[#D4A64A]/40 hover:bg-[#D4A64A] hover:text-[#000000] hover:border-[#FFF0A6]',
   }[variant];
 
   return (

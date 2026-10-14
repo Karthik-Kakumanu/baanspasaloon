@@ -283,7 +283,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
                 </h2>
                 <button
                   onClick={() => setActiveTab('appointments')}
-                  className="text-xs text-[#BFA078] font-semibold hover:underline"
+                  className="text-xs text-[#D4A64A] font-semibold hover:underline"
                 >
                   View All ({appointments.length}) →
                 </button>
@@ -351,7 +351,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
                   placeholder="Search guest or phone..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-gray-200 focus:outline-none focus:border-[#BFA078]"
+                  className="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-gray-200 focus:outline-none focus:border-[#D4A64A]"
                 />
               </div>
 
@@ -459,7 +459,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
               </div>
               <button
                 onClick={handleAddSampleService}
-                className="btn-bali py-2 px-4 text-xs bg-gradient-to-r from-[#BFA078] via-[#D6B45C] to-[#BFA078] text-[#050505] font-bold hover:opacity-90 flex items-center gap-1.5 cursor-pointer shadow-sm"
+                className="btn-bali py-2 px-4 text-xs bg-gradient-to-r from-[#D4A64A] via-[#FFF0A6] to-[#D4A64A] text-[#000000] font-bold hover:opacity-90 flex items-center gap-1.5 cursor-pointer shadow-sm"
               >
                 <Plus size={14} />
                 <span>Add Sample Service</span>
@@ -485,7 +485,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
                       <p className="text-xs text-gray-600 mt-1 line-clamp-2">{s.description}</p>
                     </div>
                     <div className="pt-3 mt-3 border-t border-gray-100 flex items-center justify-between">
-                      <span className="font-serif font-bold text-sm text-[#BFA078]">{s.price}</span>
+                      <span className="font-serif font-bold text-sm text-[#D4A64A]">{s.price}</span>
                       <button
                         onClick={() => handleDeleteService(s.slug)}
                         className="text-xs text-red-600 hover:underline cursor-pointer"
@@ -520,7 +520,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
                       <div>
                         <strong className="text-sm font-serif text-[#1B3B36]">{m.name}</strong>
                         <p className="text-gray-500">{m.phone} · {m.email || 'No email'}</p>
-                        <p className="text-[#BFA078] font-medium mt-1">Package: {m.tierName} ({m.price})</p>
+                        <p className="text-[#D4A64A] font-medium mt-1">Package: {m.tierName} ({m.price})</p>
                       </div>
                       <div className="text-left sm:text-right">
                         <span className="text-[10px] text-gray-400 block">{m.createdAt?.slice(0, 10)}</span>
@@ -551,7 +551,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
                       <div>
                         <strong className="text-sm font-serif text-[#1B3B36]">{f.name}</strong>
                         <p className="text-gray-500">{f.email} · {f.phone || 'No phone'}</p>
-                        <p className="text-[#BFA078] font-medium mt-1">Target City: {f.city}</p>
+                        <p className="text-[#D4A64A] font-medium mt-1">Target City: {f.city}</p>
                       </div>
                       <span className="text-[10px] text-gray-400">{f.createdAt?.slice(0, 10)}</span>
                     </div>
@@ -618,7 +618,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
 
               <button
                 type="submit"
-                className="btn-bali py-2.5 px-6 bg-gradient-to-r from-[#BFA078] via-[#D6B45C] to-[#BFA078] text-[#050505] font-bold hover:opacity-90 text-xs font-semibold uppercase cursor-pointer shadow-sm"
+                className="btn-bali py-2.5 px-6 bg-gradient-to-r from-[#D4A64A] via-[#FFF0A6] to-[#D4A64A] text-[#000000] font-bold hover:opacity-90 text-xs font-semibold uppercase cursor-pointer shadow-sm"
               >
                 Save Settings
               </button>

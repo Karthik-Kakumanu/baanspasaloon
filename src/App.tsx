@@ -208,7 +208,7 @@ const AppRoutes: React.FC<AppRoutesProps> = ({
   const isAdminRoute = location.pathname.startsWith('/admin');
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-[#050505]">
+    <div className="min-h-screen flex flex-col justify-between bg-[#000000]">
       {/* Customer Header */}
       {!isAdminRoute && <Header onOpenBooking={() => openBooking()} />}
 
