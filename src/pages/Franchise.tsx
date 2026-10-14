@@ -75,7 +75,7 @@ export const Franchise: React.FC<FranchiseProps> = ({ onOpenBooking }) => {
   return (
     <div className="page-franchise w-full">
       {/* 1. Franchise hero */}
-      <section className="relative w-full bg-[#000000] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#2C2114] overflow-hidden">
+      <section className="relative w-full bg-[#000000] pt-3 pb-14 lg:pt-8 lg:pb-20 border-b border-[#2C2114] overflow-hidden">
         <Hero3DCanvas className="opacity-80" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
