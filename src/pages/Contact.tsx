@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IMAGES } from '../assets/images';
 import { LOCATION_BRANCHES, SERVICES, BUSINESS_SETTINGS } from '../config/business';
 import { RotatingBadge } from '../components/RotatingBadge';
-import { MapPin, Mail, Phone, Clock, Check, ArrowDown, ExternalLink } from 'lucide-react';
+import { MapPin, Mail, Phone, Clock, Check, ArrowDown } from 'lucide-react';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import { Hero3DCanvas } from '../components/Hero3DCanvas';
 import { TiltCard } from '../components/TiltCard';
@@ -145,15 +145,6 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                     <MapPin size={16} className="text-[#D4A64A] mt-0.5 flex-shrink-0" />
                     <span>{b.address}</span>
                   </div>
-                  <a
-                    href={b.mapUrl || b.mapEmbedUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-[#FFF0A6] hover:text-[#D4A64A] transition-colors underline underline-offset-4"
-                  >
-                    <ExternalLink size={14} aria-hidden="true" />
-                    Open exact location in Google Maps
-                  </a>
                   <div className="flex items-center gap-2.5">
                     <Mail size={16} className="text-[#D4A64A] flex-shrink-0" />
                     <a href={`mailto:${b.email}`} className="hover:text-[#FFF0A6] transition-colors">
@@ -181,6 +172,32 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                   </button>
                 </div>
               </TiltCard>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto mt-10">
+            {LOCATION_BRANCHES.map((b) => (
+              <div key={`${b.id}-map`} className="overflow-hidden rounded-3xl border border-[#D4A64A]/35 bg-[#0A0A0A] shadow-xl">
+                <div className="flex items-center justify-between gap-4 px-5 py-4 border-b border-[#2C2114]">
+                  <h3 className="font-serif text-lg text-[#FFF0A6]">{b.name}</h3>
+                  <a
+                    href={b.mapUrl || b.mapEmbedUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs text-[#D4A64A] hover:text-[#FFF0A6] underline underline-offset-4 whitespace-nowrap"
+                  >
+                    Open in Maps
+                  </a>
+                </div>
+                <iframe
+                  title={`${b.name} exact location map`}
+                  src={b.mapEmbedUrl}
+                  className="block w-full h-72 sm:h-80 border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             ))}
           </div>
 
