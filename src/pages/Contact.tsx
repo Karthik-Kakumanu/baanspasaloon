@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IMAGES } from '../assets/images';
 import { LOCATION_BRANCHES, SERVICES, BUSINESS_SETTINGS } from '../config/business';
 import { RotatingBadge } from '../components/RotatingBadge';
-import { MapPin, Mail, Phone, Clock, Check, ArrowDown } from 'lucide-react';
+import { MapPin, Mail, Phone, Clock, Check, ArrowDown, ExternalLink } from 'lucide-react';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import { Hero3DCanvas } from '../components/Hero3DCanvas';
 import { TiltCard } from '../components/TiltCard';
@@ -123,7 +123,7 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
             <GoldDivider />
           </div>
 
-          <div data-motion-stagger className="compact-card-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div data-motion-stagger className="compact-card-grid grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
             {LOCATION_BRANCHES.map((b) => (
               <TiltCard
                 key={b.id}
@@ -145,6 +145,15 @@ export const Contact: React.FC<ContactProps> = ({ onOpenBooking }) => {
                     <MapPin size={16} className="text-[#D4A64A] mt-0.5 flex-shrink-0" />
                     <span>{b.address}</span>
                   </div>
+                  <a
+                    href={b.mapUrl || b.mapEmbedUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-[#FFF0A6] hover:text-[#D4A64A] transition-colors underline underline-offset-4"
+                  >
+                    <ExternalLink size={14} aria-hidden="true" />
+                    Open exact location in Google Maps
+                  </a>
                   <div className="flex items-center gap-2.5">
                     <Mail size={16} className="text-[#D4A64A] flex-shrink-0" />
                     <a href={`mailto:${b.email}`} className="hover:text-[#FFF0A6] transition-colors">

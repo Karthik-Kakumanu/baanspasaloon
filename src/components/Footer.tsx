@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Check } from 'lucide-react';
+import { Phone, Mail, MapPin, Check, ExternalLink } from 'lucide-react';
 import { BUSINESS_SETTINGS, SERVICES, LOCATION_BRANCHES } from '../config/business';
 import type { Appointment } from '../types';
 
@@ -87,9 +87,29 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 <Mail size={14} className="text-[#D4A64A]" />
                 <span>{BUSINESS_SETTINGS.email}</span>
               </div>
-              <div className="flex items-start gap-2">
-                <MapPin size={14} className="text-[#D4A64A] mt-0.5 flex-shrink-0" />
-                <span>{BUSINESS_SETTINGS.address}</span>
+              <div className="space-y-3 pt-1">
+                {LOCATION_BRANCHES.map((branch) => (
+                  <div key={branch.id} className="flex items-start gap-2">
+                    <MapPin size={14} className="text-[#D4A64A] mt-0.5 flex-shrink-0" />
+                    <div className="min-w-0">
+                      <p className="text-[#FFF0A6] font-medium">{branch.name}</p>
+                      <p>{branch.address}</p>
+                      <a href={`tel:${branch.phone.replace(/\s+/g, '')}`} className="inline-flex items-center gap-1.5 mt-1 hover:text-[#FFF0A6] transition-colors">
+                        <Phone size={12} aria-hidden="true" />
+                        {branch.phone}
+                      </a>
+                      <a
+                        href={branch.mapUrl || branch.mapEmbedUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 mt-1 text-[#FFF0A6] hover:text-[#D4A64A] underline underline-offset-4 transition-colors"
+                      >
+                        <ExternalLink size={12} aria-hidden="true" />
+                        Google Maps location
+                      </a>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 

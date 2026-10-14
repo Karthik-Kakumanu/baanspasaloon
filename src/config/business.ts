@@ -9,7 +9,7 @@ export const BUSINESS_SETTINGS: BusinessSettings = {
   heroHeadline: 'Salon, beauty, spa and bridal care — thoughtfully delivered',
   heroSubtitle: 'Personalized salon services, restorative spa rituals and bridal beauty in a welcoming BAAN B setting.',
   phone: '+91 9100088231',
-  headerPhone: '+91 9550728155',
+  headerPhone: '+91 9100088231 · +91 7993425252',
   email: 'info@baanb.in',
   hours: 'Monday – Sunday: 9:00 AM – 9:00 PM',
   address: 'Ground Floor, SBR Gateway, Hitech City, Shop No. 3, Near IBIS Hotel, Telangana – 500081',
@@ -456,6 +456,7 @@ export const LOCATION_BRANCHES: LocationBranch[] = [
     phone: '+91 9100088231',
     hours: BUSINESS_SETTINGS.hours,
     mapEmbedUrl: 'https://maps.google.com/maps?output=embed&q=Ground+Floor%2C+SBR+Gateway%2C+Hitech+City%2C+Shop+No.+3%2C+Near+IBIS+Hotel%2C+Telangana+500081',
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Ground+Floor%2C+SBR+Gateway%2C+Hitech+City%2C+Shop+No.+3%2C+Near+IBIS+Hotel%2C+Telangana+500081',
     image: IMAGES.spaces[0].image,
   },
   {
@@ -468,6 +469,7 @@ export const LOCATION_BRANCHES: LocationBranch[] = [
     phone: '+91 7993425252',
     hours: BUSINESS_SETTINGS.hours,
     mapEmbedUrl: 'https://maps.google.com/maps?output=embed&q=2nd+Floor%2C+Bajaj+Bike+Building%2C+100+Feet+Road%2C+Ayyappa+Society%2C+Madhapur%2C+Hyderabad+500081',
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=2nd+Floor%2C+Bajaj+Bike+Building%2C+100+Feet+Road%2C+Ayyappa+Society%2C+Madhapur%2C+Hyderabad+500081',
     image: IMAGES.spaces[1].image,
   },
 ];

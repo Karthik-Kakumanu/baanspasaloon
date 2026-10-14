@@ -41,6 +41,7 @@ export interface LocationBranch {
   headerPhone?: string;
   hours: string;
   mapEmbedUrl?: string;
+  mapUrl?: string;
   image: string;
 }
 
