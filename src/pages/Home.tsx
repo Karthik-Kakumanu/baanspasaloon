@@ -43,7 +43,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenBooking }) => {
       <section
         onMouseMove={handleHeroMouseMove}
         onMouseLeave={handleHeroMouseLeave}
-        className="home-hero relative w-full bg-[#000000] pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden border-b border-[#2C2114]"
+        className="home-hero relative w-full bg-[#000000] pt-3 pb-14 lg:pt-8 lg:pb-20 overflow-hidden border-b border-[#2C2114]"
       >
         {/* Interactive 3D Canvas Background with orbital rings and floating gold ember particles */}
         <Hero3DCanvas className="opacity-90" />

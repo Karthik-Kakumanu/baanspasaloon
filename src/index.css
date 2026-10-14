@@ -189,7 +189,7 @@ body.menu-open { overflow: hidden; }
 .home-hero {
   min-height: min(700px, 78vw);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   color: var(--baan-ivory) !important;
   background: radial-gradient(ellipse at 76% 45%, rgba(191,160,120,.12), transparent 46%), linear-gradient(100deg, rgba(5,5,5,.94), rgba(24,22,20,.66)), var(--baan-black) !important;
   border-color: var(--baan-border) !important;
