@@ -50,13 +50,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
   return (
     <>
       {/* Top Announcement Bar */}
-      <div className="announcement site-announcement min-h-[34px] bg-[#0A0A0A] text-[#F7F3EC] text-xs py-2 px-4 text-center font-normal tracking-wide flex items-center justify-center gap-2 leading-tight">
-        <Sparkles size={13} className="text-[#D4A95B]" />
+      <div className="announcement site-announcement min-h-[34px] bg-[#D4A64A] text-[#000000] text-xs py-2 px-4 text-center font-normal tracking-wide flex items-center justify-center gap-2 leading-tight">
+        <Sparkles size={13} className="text-[#000000]" />
         <span>{BUSINESS_SETTINGS.announcement}</span>
         <span className="hidden sm:inline opacity-40">·</span>
         <button
           onClick={onOpenBooking}
-          className="underline hover:text-[#D4A95B] transition-colors ml-1 font-medium inline-flex items-center gap-1 cursor-pointer bg-transparent border-0 text-inherit p-0"
+          className="underline hover:text-[#111111] transition-colors ml-1 font-medium inline-flex items-center gap-1 cursor-pointer bg-transparent border-0 text-inherit p-0"
         >
           Request an Appointment <ArrowRight size={11} />
         </button>

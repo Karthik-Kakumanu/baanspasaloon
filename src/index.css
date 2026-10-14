@@ -155,8 +155,8 @@ button { cursor: pointer; }
 .site-header .nav-item:hover::after { right: 0; }
 body.menu-open { overflow: hidden; }
 
-.announcement { background: var(--baan-soft-black) !important; color: var(--baan-ivory) !important; border-bottom: 1px solid rgba(191,160,120,.2); }
-.announcement svg { color: var(--baan-gold-highlight) !important; }
+.announcement { background: var(--baan-gold) !important; color: var(--baan-black) !important; border-bottom: 1px solid rgba(0,0,0,.22); }
+.announcement svg { color: var(--baan-black) !important; }
 .site-header, .site-header.is-scrolled {
   background: rgba(5,5,5,.97) !important;
   color: var(--baan-ivory);
