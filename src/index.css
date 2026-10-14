@@ -709,6 +709,21 @@ button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
   .site-header .nav-shell { min-height: 78px; }
   .site-header .nav-logo img { height: 70px !important; }
   .site-header .mobile-menu-panel { background: var(--baan-charcoal) !important; }
+
+  /* Keep the home hero consistent on tablet-sized phones and narrow mobile browsers. */
+  .home-hero {
+    min-height: 0;
+  }
+  .home-hero > div,
+  .home-hero .grid,
+  .home-hero .home-hero-copy,
+  .home-hero .tilt-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .home-hero .tilt-card {
+    width: 100%;
+  }
 }
 @media (max-width: 640px) {
   .home-hero { min-height: 0; padding-bottom: 4.5rem; }
